@@ -1543,3 +1543,31 @@ body[data-mood="ink"] .catbar__chip[aria-current="true"] {
   .dish__figure { inline-size: min(56vw, 27svh); }
   .dish__subtitle { display: none; }
 }
+@media (max-width: 1023.98px) {
+  .welcome {
+    justify-content: flex-start;
+    padding-block-start: calc(var(--nav-h) + var(--catbar-h) + env(safe-area-inset-top) + var(--s3));
+    gap: var(--s4);
+  }
+  .welcome__figure { inline-size: min(86vw, 44svh); }
+  .welcome .section-title { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .dish {
+    gap: var(--s3);
+    padding-block-start: calc(var(--nav-h) + var(--catbar-h) + env(safe-area-inset-top) + var(--s2));
+  }
+  .dish__figure { inline-size: min(86vw, 42svh); }
+  .dish__kicker,
+  .dish__subtitle { display: none; }          
+  .dish__name { font-size: clamp(1.6rem, 7.4vw, 2.2rem); line-height: 1.25; }
+  .dish__content { gap: var(--s1); }
+  .dish__desc { -webkit-line-clamp: 2; min-block-size: 0; font-size: .9rem; line-height: 1.65; }
+  .dish__price { font-size: clamp(1.35rem, 5.4vw, 1.6rem); }
+  .dish__price-rule { inline-size: 1.5rem; }
+  .dish__foot .iconbtn { inline-size: 40px; block-size: 40px; }
+  .dish__foot .iconbtn svg { inline-size: 18px; block-size: 18px; }
+}
+@media (max-width: 1023.98px) and (max-height: 700px) {
+  .dish { padding-block-start: calc(var(--nav-h) + var(--catbar-h) + env(safe-area-inset-top) + var(--s2)); }
+  .dish__figure { inline-size: min(78vw, 38svh); }
+  .welcome__figure { inline-size: min(78vw, 40svh); }
+}
