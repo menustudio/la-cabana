@@ -1,0 +1,367 @@
+[
+  {
+    "id": "breakfast",
+    "order": 1,
+    "label": {
+      "en": "Breakfast",
+      "ar": "الفطور"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الفطور",
+        "en": "Breakfast"
+      },
+      "subtitle": {
+        "en": "Slow mornings, warm bread",
+        "ar": "صباح هادئ وخبز دافئ"
+      }
+    }
+  },
+  {
+    "id": "fatteh",
+    "order": 2,
+    "label": {
+      "en": "Fatteh",
+      "ar": "الفتة"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الفتة",
+        "en": "Fatteh"
+      },
+      "subtitle": {
+        "en": "Crisp bread, rich sauce",
+        "ar": "خبز مقرمش وصوص غني"
+      }
+    }
+  },
+  {
+    "id": "soups",
+    "order": 3,
+    "label": {
+      "en": "Soups",
+      "ar": "الشوربات"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الشوربات",
+        "en": "Soups"
+      },
+      "subtitle": {
+        "en": "A warm first spoonful",
+        "ar": "أول ملعقة دافئة"
+      }
+    }
+  },
+  {
+    "id": "salads",
+    "order": 4,
+    "label": {
+      "en": "Salads",
+      "ar": "السلطات"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "السلطات",
+        "en": "Salads"
+      },
+      "subtitle": {
+        "en": "Fresh leaves, bright dressings",
+        "ar": "أوراق طازجة وصوصات منعشة"
+      }
+    }
+  },
+  {
+    "id": "appetizers",
+    "order": 5,
+    "label": {
+      "en": "Appetizers",
+      "ar": "المقبلات"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "المقبلات",
+        "en": "Appetizers"
+      },
+      "subtitle": {
+        "en": "Plates made for sharing",
+        "ar": "أطباق صُنعت للمشاركة"
+      }
+    }
+  },
+  {
+    "id": "mains",
+    "order": 6,
+    "label": {
+      "en": "Main Courses",
+      "ar": "الأطباق الرئيسية"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الأطباق الرئيسية",
+        "en": "Main Courses"
+      },
+      "subtitle": {
+        "en": "From the grill and the stove",
+        "ar": "من الشواية ومن القدر"
+      }
+    }
+  },
+  {
+    "id": "burgers",
+    "order": 7,
+    "label": {
+      "en": "Burgers & Sandwiches",
+      "ar": "البرجر والساندويتشات"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "البرجر والساندويتشات",
+        "en": "Burgers & Sandwiches"
+      },
+      "subtitle": {
+        "en": "Brioche, Angus and a good crunch",
+        "ar": "بريوش وأنجوس وقرمشة مضبوطة"
+      }
+    }
+  },
+  {
+    "id": "pasta",
+    "order": 8,
+    "label": {
+      "en": "Pasta & Risotto",
+      "ar": "الباستا والريزوتو"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الباستا والريزوتو",
+        "en": "Pasta & Risotto"
+      },
+      "subtitle": {
+        "en": "Italian comfort, our way",
+        "ar": "دفء إيطالي على طريقتنا"
+      }
+    }
+  },
+  {
+    "id": "pizza",
+    "order": 9,
+    "label": {
+      "en": "Pizza",
+      "ar": "البيتزا"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "البيتزا",
+        "en": "Pizza"
+      },
+      "subtitle": {
+        "en": "Neapolitan dough, generous tops",
+        "ar": "عجينة نابولي وحشوة سخية"
+      }
+    }
+  },
+  {
+    "id": "desserts",
+    "order": 10,
+    "label": {
+      "en": "Desserts",
+      "ar": "الحلويات"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الحلويات",
+        "en": "Desserts"
+      },
+      "subtitle": {
+        "en": "The sweet last word",
+        "ar": "الختام الحلو"
+      }
+    }
+  },
+  {
+    "id": "hot-drinks",
+    "order": 11,
+    "layout": "grid",
+    "label": {
+      "en": "Coffee & Tea",
+      "ar": "القهوة والشاي"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "القهوة والشاي",
+        "en": "Coffee & Tea"
+      },
+      "subtitle": {
+        "en": "Espresso bar, teapots and sahlab",
+        "ar": "إسبريسو وأباريق شاي وسحلب"
+      }
+    }
+  },
+  {
+    "id": "cold-drinks",
+    "order": 12,
+    "layout": "grid",
+    "label": {
+      "en": "Iced Coffee & Shakes",
+      "ar": "القهوة المثلّجة والميلك شيك"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "القهوة المثلّجة والميلك شيك",
+        "en": "Iced Coffee & Shakes"
+      },
+      "subtitle": {
+        "en": "Poured over ice",
+        "ar": "على الثلج"
+      }
+    }
+  },
+  {
+    "id": "juices",
+    "order": 13,
+    "layout": "grid",
+    "label": {
+      "en": "Juices & Smoothies",
+      "ar": "العصائر والسموذي"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "العصائر والسموذي",
+        "en": "Juices & Smoothies"
+      },
+      "subtitle": {
+        "en": "Pressed fresh",
+        "ar": "طازجة من الفاكهة"
+      }
+    }
+  },
+  {
+    "id": "mojito",
+    "order": 14,
+    "layout": "grid",
+    "label": {
+      "en": "Mojitos",
+      "ar": "الموهيتو"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الموهيتو",
+        "en": "Mojitos"
+      },
+      "subtitle": {
+        "en": "Mint, fruit and a fizz",
+        "ar": "نعناع وفاكهة وفوران"
+      }
+    }
+  },
+  {
+    "id": "soft-drinks",
+    "order": 15,
+    "layout": "grid",
+    "label": {
+      "en": "Soft Drinks & Water",
+      "ar": "المشروبات الغازية والمياه"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "المشروبات الغازية والمياه",
+        "en": "Soft Drinks & Water"
+      },
+      "subtitle": {
+        "en": "Chilled",
+        "ar": "باردة"
+      }
+    }
+  },
+  {
+    "id": "wine",
+    "order": 16,
+    "layout": "grid",
+    "label": {
+      "en": "Non-Alcoholic Wine",
+      "ar": "نبيذ بدون كحول"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "نبيذ بدون كحول",
+        "en": "Non-Alcoholic Wine"
+      },
+      "subtitle": {
+        "en": "By the bottle",
+        "ar": "بالزجاجة"
+      }
+    }
+  },
+  {
+    "id": "shisha",
+    "order": 17,
+    "layout": "list",
+    "coverImage": "shisha-cover",
+    "label": {
+      "en": "Shisha",
+      "ar": "الشيشة"
+    },
+    "mood": "navy",
+    "dishMood": "navy",
+    "ornament": "crown",
+    "intro": {
+      "title": {
+        "ar": "الشيشة",
+        "en": "Shisha"
+      },
+      "subtitle": {
+        "en": "Pick your flavor",
+        "ar": "اختر نكهتك"
+      }
+    }
+  }
+]

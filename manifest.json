@@ -1,0 +1,30 @@
+{
+  "name": "أديكتو لا كابانا — المنيو",
+  "short_name": "لا كابانا",
+  "description": "منيو أديكتو لا كابانا — مطعم ومقهى في الرياض",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1A2436",
+  "theme_color": "#1A2436",
+  "icons": [
+    {
+      "src": "assets/logo/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

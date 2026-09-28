@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "_README": "عرض مؤقت يظهر كأول شاشة بعد الغلاف — البوستر كاملاً. يظهر فقط بين from و until (توقيت الرياض +03:00). عشان تفعّله: حط id وimage (اسم الملف في assets/images/promo/ بدون امتداد) والتواريخ.",
+  "id": null,
+  "from": null,
+  "until": null,
+  "label": { "ar": "", "en": "" },
+  "image": "",
+  "texture": "OFFER",
+  "mood": "paper"
+}

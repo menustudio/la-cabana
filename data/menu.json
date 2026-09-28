@@ -1,0 +1,3488 @@
+{
+ "version": 1,
+ "source": "qlub",
+ "dishes": [
+  {
+   "id": "halloumi-hamsa",
+   "qlubId": "Y7x1D",
+   "category": "breakfast",
+   "name": {
+    "en": "Halloumi Hamsa",
+    "ar": "حمسة حلوم"
+   },
+   "subtitle": {
+    "en": "Halloumi Hamsa",
+    "ar": "حمسة حلوم"
+   },
+   "description": {
+    "en": "Halloumi cooked in olive oil with mixed bell peppers, black olives and oregano.",
+    "ar": "جبنة حلوم مطهوّة بزيت الزيتون مع الفلفل الحلو المشكّل والزيتون الأسود والأوريغانو."
+   },
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "stuffed-falafel",
+   "qlubId": "N8RV6",
+   "category": "breakfast",
+   "name": {
+    "en": "Stuffed Falafel",
+    "ar": "فلافل محشية"
+   },
+   "subtitle": {
+    "en": "Stuffed Falafel",
+    "ar": "فلافل محشية"
+   },
+   "description": {
+    "en": "Falafel stuffed with onion, sumac and sesame, served with hummus, cucumber, tomato and tahini.",
+    "ar": "فلافل محشية بالبصل والسماق والسمسم، تُقدَّم مع الحمص والخيار والطماطم وصوص الطحينة."
+   },
+   "image": "stuffed-falafel",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "falafel-fatteh",
+   "qlubId": "VvLlQ",
+   "category": "breakfast",
+   "name": {
+    "en": "Falafel Fatteh",
+    "ar": "فتة فلافل"
+   },
+   "subtitle": {
+    "en": "Falafel Fatteh",
+    "ar": "فتة فلافل"
+   },
+   "description": {
+    "en": "Fried falafel with badweh sauce, fried bread, almonds, smoked paprika, cumin and olive oil.",
+    "ar": "فلافل مقلية مع صوص البدوة والخبز المقلي واللوز والكمون والبابريكا المدخّنة وزيت الزيتون."
+   },
+   "image": "falafel-fatteh",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "hummus-fatteh",
+   "qlubId": "Bq5Xl",
+   "category": "breakfast",
+   "name": {
+    "en": "Hummus Fatteh",
+    "ar": "فتة حمص"
+   },
+   "subtitle": {
+    "en": "Hummus Fatteh",
+    "ar": "فتة حمص"
+   },
+   "description": {
+    "en": "Hummus balila with badweh sauce, fried bread, hot ghee, fried almonds, smoked paprika and cumin.",
+    "ar": "حمص بليلة مع صوص البدوة والخبز المقلي والسمن واللوز المقلي والكمون والبابريكا المدخّنة."
+   },
+   "image": "hummus-fatteh",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lahm-bi-ajeen-cheese",
+   "qlubId": "4PdYr",
+   "category": "breakfast",
+   "name": {
+    "en": "Lahm Bi Ajeen with Cheese",
+    "ar": "لحم بعجين بالجبن"
+   },
+   "subtitle": {
+    "en": "Lahm Bi Ajeen with Cheese",
+    "ar": "لحم بعجين بالجبن"
+   },
+   "image": "lahm-bi-ajeen-cheese",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "muhammara-manousheh-cheese",
+   "qlubId": "83QNB",
+   "category": "breakfast",
+   "name": {
+    "en": "Muhammara Manousheh with Cheese",
+    "ar": "منقوشة محمّرة بالجبن"
+   },
+   "subtitle": {
+    "en": "Muhammara Manousheh with Cheese",
+    "ar": "منقوشة محمّرة بالجبن"
+   },
+   "image": "muhammara-manousheh-cheese",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "muhammara-manousheh",
+   "qlubId": "03OWv",
+   "category": "breakfast",
+   "name": {
+    "en": "Muhammara Manousheh",
+    "ar": "منقوشة محمّرة"
+   },
+   "subtitle": {
+    "en": "Muhammara Manousheh",
+    "ar": "منقوشة محمّرة"
+   },
+   "image": "muhammara-manousheh",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lahm-bi-ajeen",
+   "qlubId": "71KOv",
+   "category": "breakfast",
+   "name": {
+    "en": "Lahm Bi Ajeen",
+    "ar": "لحم بعجين"
+   },
+   "subtitle": {
+    "en": "Lahm Bi Ajeen",
+    "ar": "لحم بعجين"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "hamees-lahm",
+   "qlubId": "ALV17",
+   "category": "breakfast",
+   "name": {
+    "en": "Hamees Lahm",
+    "ar": "حميس لحم"
+   },
+   "subtitle": {
+    "en": "Hamees Lahm",
+    "ar": "حميس لحم"
+   },
+   "description": {
+    "en": "Minced lamb shoulder cooked with olive oil and onion, served with pita bread.",
+    "ar": "لحم كتف خروف مفروم مطهو بزيت الزيتون والبصل، يُقدَّم مع خبز البيتا."
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mixed-manakish",
+   "qlubId": "GJLMZ",
+   "category": "breakfast",
+   "name": {
+    "en": "Mixed Mini Manakish",
+    "ar": "مناقيش ميني مشكّلة"
+   },
+   "subtitle": {
+    "en": "Mixed Mini Manakish",
+    "ar": "مناقيش ميني مشكّلة"
+   },
+   "description": {
+    "en": "Mini manakish of lahm bi ajeen, akkawi cheese, muhammara, zaatar and spinach, served with baby arugula.",
+    "ar": "مناقيش ميني: لحم بعجين وجبنة عكاوي ومحمّرة وزعتر وسبانخ، تُقدَّم مع الجرجير."
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shami-breakfast",
+   "qlubId": "5qXJP",
+   "category": "breakfast",
+   "name": {
+    "en": "Shami Breakfast",
+    "ar": "فطور شامي"
+   },
+   "subtitle": {
+    "en": "Shami Breakfast",
+    "ar": "فطور شامي"
+   },
+   "description": {
+    "en": "Hummus, falafel, labneh, Saudi foul, pickles and mixed vegetables, omelette and pita bread.",
+    "ar": "حمص وفلافل ولبنة وفول سعودي ومخلل خيار وخضار مشكّلة وأومليت وخبز البيتا."
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "saudi-breakfast",
+   "qlubId": "Zr3lm",
+   "category": "breakfast",
+   "name": {
+    "en": "Saudi Breakfast",
+    "ar": "فطور سعودي"
+   },
+   "subtitle": {
+    "en": "Saudi Breakfast",
+    "ar": "فطور سعودي"
+   },
+   "description": {
+    "en": "Hummus, Saudi foul, pickles and mixed vegetables, hamees lahm, chicken mugalgal, shakshouka and pita bread.",
+    "ar": "حمص وفول سعودي ومخلل وخضار مشكّلة وحميس لحم ومقلقل دجاج وشكشوكة وخبز البيتا."
+   },
+   "image": "saudi-breakfast",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "turkish-shakshouka",
+   "qlubId": "zn8mA",
+   "category": "breakfast",
+   "name": {
+    "en": "Turkish Shakshouka",
+    "ar": "شكشوكة تركية"
+   },
+   "subtitle": {
+    "en": "Turkish Shakshouka",
+    "ar": "شكشوكة تركية"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "oriental-breakfast",
+   "qlubId": "M814B",
+   "category": "breakfast",
+   "name": {
+    "en": "Oriental Breakfast",
+    "ar": "فطور شرقي"
+   },
+   "subtitle": {
+    "en": "Oriental Breakfast",
+    "ar": "فطور شرقي"
+   },
+   "calories": 1050,
+   "image": "oriental-breakfast",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "crispy-omelette-roll",
+   "qlubId": "QyLl1",
+   "category": "breakfast",
+   "name": {
+    "en": "Crispy Omelette Roll",
+    "ar": "رول أومليت مقرمش"
+   },
+   "subtitle": {
+    "en": "Crispy Omelette Roll",
+    "ar": "رول أومليت مقرمش"
+   },
+   "calories": 460,
+   "image": "crispy-omelette-roll",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "eggs-with-cheese",
+   "qlubId": "PoLl1",
+   "category": "breakfast",
+   "name": {
+    "en": "Eggs with Cheese",
+    "ar": "بيض بالجبن"
+   },
+   "subtitle": {
+    "en": "Eggs with Cheese",
+    "ar": "بيض بالجبن"
+   },
+   "calories": 515,
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "labneh-zaatar",
+   "qlubId": "KyL7B",
+   "category": "breakfast",
+   "name": {
+    "en": "Labneh & Zaatar",
+    "ar": "لبنة وزعتر"
+   },
+   "subtitle": {
+    "en": "Labneh & Zaatar",
+    "ar": "لبنة وزعتر"
+   },
+   "calories": 410,
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "zaatar-manousheh",
+   "qlubId": "bqloW",
+   "category": "breakfast",
+   "name": {
+    "en": "Zaatar Manousheh",
+    "ar": "منقوشة زعتر"
+   },
+   "subtitle": {
+    "en": "Zaatar Manousheh",
+    "ar": "منقوشة زعتر"
+   },
+   "calories": 357,
+   "image": "zaatar-manousheh",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "grape-leaves-fatteh",
+   "qlubId": "M81vk",
+   "category": "fatteh",
+   "name": {
+    "en": "Grape Leaves Fatteh",
+    "ar": "فتة ورق العنب"
+   },
+   "subtitle": {
+    "en": "Grape Leaves Fatteh",
+    "ar": "فتة ورق العنب"
+   },
+   "calories": 510,
+   "image": "grape-leaves-fatteh",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "eggplant-fatteh",
+   "qlubId": "PoLvL",
+   "category": "fatteh",
+   "name": {
+    "en": "Eggplant Fatteh",
+    "ar": "فتة الباذنجان"
+   },
+   "subtitle": {
+    "en": "Eggplant Fatteh",
+    "ar": "فتة الباذنجان"
+   },
+   "description": {
+    "en": "Eggplant fatteh with tahini sauce, fried bread, pomegranate, parsley and olive oil.",
+    "ar": "فتة باذنجان بصوص الطحينة والخبز المقلي، مع الرمان والبقدونس وزيت الزيتون."
+   },
+   "calories": 764,
+   "image": "eggplant-fatteh",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "lentil-soup",
+   "qlubId": "zn8mD",
+   "category": "soups",
+   "name": {
+    "en": "Lentil Soup",
+    "ar": "شوربة العدس"
+   },
+   "subtitle": {
+    "en": "Lentil Soup",
+    "ar": "شوربة العدس"
+   },
+   "description": {
+    "en": "Traditional lentil soup, served with toasted bread and lemon.",
+    "ar": "شوربة عدس تقليدية، تُقدَّم مع الخبز المحمّص والليمون."
+   },
+   "calories": 96,
+   "image": "lentil-soup",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "mushroom-soup",
+   "qlubId": "M814k",
+   "category": "soups",
+   "name": {
+    "en": "Mushroom Soup",
+    "ar": "شوربة الفطر"
+   },
+   "subtitle": {
+    "en": "Mushroom Soup",
+    "ar": "شوربة الفطر"
+   },
+   "description": {
+    "en": "Cream of mushroom soup, served with toasted bread and lemon.",
+    "ar": "شوربة الفطر بالكريمة، تُقدَّم مع الخبز المحمّص والليمون."
+   },
+   "calories": 123,
+   "image": "mushroom-soup",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "beetroot-salad",
+   "qlubId": "WoklQ",
+   "category": "salads",
+   "name": {
+    "en": "Beetroot Salad",
+    "ar": "سلطة الشمندر"
+   },
+   "subtitle": {
+    "en": "Beetroot Salad",
+    "ar": "سلطة الشمندر"
+   },
+   "description": {
+    "en": "Roasted beetroot with feta, dill, olive oil, lemon, orange and walnuts.",
+    "ar": "شمندر مشوي مع جبنة الفيتا والشبت وزيت الزيتون والليمون والبرتقال وعين الجمل."
+   },
+   "calories": 712,
+   "image": "beetroot-salad",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "midnight-salad",
+   "qlubId": "JRLAR",
+   "category": "salads",
+   "name": {
+    "en": "Midnight Salad",
+    "ar": "سلطة مدنايت"
+   },
+   "subtitle": {
+    "en": "Midnight Salad",
+    "ar": "سلطة مدنايت"
+   },
+   "description": {
+    "en": "Mixed leaves, bell peppers, black olives and corn with berry sauce and sour cream, served with Doritos, feta and oregano.",
+    "ar": "تشكيلة خس وفلفل رومي مشكّل وزيتون أسود وذرة مع صوص التوت والسور كريم، تُقدَّم مع الدوريتوس وجبنة الفيتا والأوريغانو."
+   },
+   "calories": 990,
+   "image": "midnight-salad",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "arugula-salad",
+   "qlubId": "jxd2j",
+   "category": "salads",
+   "name": {
+    "en": "Arugula Salad",
+    "ar": "سلطة الجرجير"
+   },
+   "subtitle": {
+    "en": "Arugula Salad",
+    "ar": "سلطة الجرجير"
+   },
+   "description": {
+    "en": "Baby arugula with avocado, mango, pineapple and red and yellow cherry tomatoes, balsamic glaze, olive oil and lemon.",
+    "ar": "أوراق الجرجير مع الأفوكادو والمانجو والأناناس والطماطم الكرزية المشكّلة، بصوص البلسميك وزيت الزيتون والليمون."
+   },
+   "calories": 550,
+   "image": "arugula-salad",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "sebastiano-salad",
+   "qlubId": "g6Nmv",
+   "category": "salads",
+   "name": {
+    "en": "Sebastiano Salad",
+    "ar": "سلطة سيباستيانو"
+   },
+   "subtitle": {
+    "en": "Sebastiano Salad",
+    "ar": "سلطة سيباستيانو"
+   },
+   "description": {
+    "en": "Lettuce, arugula, spinach and cucumber with strawberries, berries and cherry tomatoes, dressed in balsamic, basil and lemon.",
+    "ar": "خس وجرجير وسبانخ وخيار مع الفراولة والتوت والطماطم الكرزية، بصوص البلسميك والريحان والليمون."
+   },
+   "calories": 280,
+   "image": "sebastiano-salad",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "adicto-salad",
+   "qlubId": "Do80P",
+   "category": "salads",
+   "name": {
+    "en": "ADIC2 Salad",
+    "ar": "سلطة أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Salad",
+    "ar": "سلطة أديكتو"
+   },
+   "description": {
+    "en": "Lettuce and arugula in vinaigrette, with mango, pineapple and shrimp in mango chutney.",
+    "ar": "خس وجرجير بصوص الفينيغريت، مع المانجو والأناناس والروبيان بصوص المانجو شاتني."
+   },
+   "calories": 400,
+   "image": "adicto-salad",
+   "background": "navy",
+   "available": true,
+   "signature": true
+  },
+  {
+   "id": "avocado-quinoa-salad",
+   "qlubId": "xW5yw",
+   "category": "salads",
+   "name": {
+    "en": "Avocado Quinoa Salad",
+    "ar": "سلطة الأفوكادو والكينوا"
+   },
+   "subtitle": {
+    "en": "Avocado Quinoa Salad",
+    "ar": "سلطة الأفوكادو والكينوا"
+   },
+   "description": {
+    "en": "Avocado with quinoa, red cabbage, walnuts and colored bell peppers, dressed in balsamic, lemon and basil sauces.",
+    "ar": "أفوكادو مع الكينوا والملفوف الأحمر وعين الجمل والفلفل الرومي الملوّن، بصوص البلسميك والليمون والريحان."
+   },
+   "calories": 450,
+   "image": "avocado-quinoa-salad",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "tabbouleh",
+   "qlubId": "2rYeL",
+   "category": "salads",
+   "name": {
+    "en": "Tabbouleh",
+    "ar": "تبولة"
+   },
+   "subtitle": {
+    "en": "Tabbouleh",
+    "ar": "تبولة"
+   },
+   "description": {
+    "en": "Parsley, tomato, onion and bulgur with olive oil, lemon, pomegranate molasses, pomegranate, baby gem lettuce, radish and mint.",
+    "ar": "بقدونس وطماطم وبصل وبرغل مع زيت الزيتون والليمون ودبس الرمان والرمان وخس البيبي جم والفجل الأحمر والنعناع."
+   },
+   "calories": 199,
+   "image": "tabbouleh",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "fattoush",
+   "qlubId": "ObJDx",
+   "category": "salads",
+   "name": {
+    "en": "Fattoush",
+    "ar": "فتوش"
+   },
+   "subtitle": {
+    "en": "Fattoush",
+    "ar": "فتوش"
+   },
+   "description": {
+    "en": "Lettuce, cucumber, tomato, radish, parsley, mint and olives with olive oil and fresh lemon, topped with fried bread, pomegranate, pomegranate molasses and sumac.",
+    "ar": "خس وخيار وطماطم وفجل أحمر وبقدونس ونعناع وزيتون، بزيت الزيتون وعصير الليمون الطازج، مع الخبز المقلي والرمان ودبس الرمان والسماق."
+   },
+   "calories": 160,
+   "image": "fattoush",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "caesar-salad",
+   "qlubId": "6ZbeM",
+   "category": "salads",
+   "name": {
+    "en": "Caesar Salad",
+    "ar": "سلطة سيزر"
+   },
+   "subtitle": {
+    "en": "Caesar Salad",
+    "ar": "سلطة سيزر"
+   },
+   "description": {
+    "en": "Iceberg lettuce with Caesar dressing, parmesan and toasted croutons.",
+    "ar": "خس آيسبيرغ بصوص السيزر وجبنة البارميزان والخبز المحمّص."
+   },
+   "calories": 520,
+   "image": "caesar-salad",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "hummus-beiruti",
+   "qlubId": "PoLlL",
+   "category": "appetizers",
+   "name": {
+    "en": "Hummus Beiruti",
+    "ar": "حمص بيروتي"
+   },
+   "subtitle": {
+    "en": "Hummus Beiruti",
+    "ar": "حمص بيروتي"
+   },
+   "description": {
+    "en": "Beirut-style hummus with olive oil, served with pita bread.",
+    "ar": "حمص على الطريقة البيروتية مع زيت الزيتون، يُقدَّم مع خبز البيتا."
+   },
+   "image": "hummus-beiruti",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "baba-ghanoush",
+   "qlubId": "QyLlK",
+   "category": "appetizers",
+   "name": {
+    "en": "Baba Ghanoush",
+    "ar": "بابا غنوج"
+   },
+   "subtitle": {
+    "en": "Baba Ghanoush",
+    "ar": "بابا غنوج"
+   },
+   "description": {
+    "en": "Baba ghanoush with pomegranate, walnuts, olive oil and pomegranate molasses, served with pita bread.",
+    "ar": "بابا غنوج مع الرمان وعين الجمل وزيت الزيتون ودبس الرمان، يُقدَّم مع خبز البيتا."
+   },
+   "calories": 425,
+   "image": "baba-ghanoush",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "grape-leaves",
+   "qlubId": "yvGmy",
+   "category": "appetizers",
+   "name": {
+    "en": "Grape Leaves",
+    "ar": "ورق عنب"
+   },
+   "subtitle": {
+    "en": "Grape Leaves",
+    "ar": "ورق عنب"
+   },
+   "description": {
+    "en": "Vine leaves stuffed with rice, onion, tomato, mint and parsley in tomato sauce and olive oil, served with pomegranate molasses, lemon and radish.",
+    "ar": "ورق عنب محشي بالأرز والبصل والطماطم والنعناع والبقدونس بصلصة الطماطم وزيت الزيتون، يُقدَّم مع دبس الرمان والليمون والفجل."
+   },
+   "calories": 214,
+   "image": "grape-leaves",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "moutabal",
+   "qlubId": "oDPm3",
+   "category": "appetizers",
+   "name": {
+    "en": "Moutabal",
+    "ar": "متبل"
+   },
+   "subtitle": {
+    "en": "Moutabal",
+    "ar": "متبل"
+   },
+   "description": {
+    "en": "Eggplant moutabal with olive oil, sumac, radish and pomegranate.",
+    "ar": "متبل باذنجان مع زيت الزيتون والسماق والفجل والرمان."
+   },
+   "calories": 235,
+   "image": "moutabal",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "hummus-beef",
+   "qlubId": "RPJlG",
+   "category": "appetizers",
+   "name": {
+    "en": "Hummus with Beef",
+    "ar": "حمص باللحمة"
+   },
+   "subtitle": {
+    "en": "Hummus with Beef",
+    "ar": "حمص باللحمة"
+   },
+   "description": {
+    "en": "Hummus topped with Black Angus beef, parsley and fried almonds.",
+    "ar": "حمص مع لحم بلاك أنجوس والبقدونس واللوز المقلي."
+   },
+   "calories": 310,
+   "image": "hummus-beef",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "avocado-hummus",
+   "qlubId": "r2Zmr",
+   "category": "appetizers",
+   "name": {
+    "en": "Avocado Hummus",
+    "ar": "حمص أفوكادو"
+   },
+   "subtitle": {
+    "en": "Avocado Hummus",
+    "ar": "حمص أفوكادو"
+   },
+   "description": {
+    "en": "Avocado hummus with hummus balila, avocado, radish, olive oil and paprika.",
+    "ar": "حمص بالأفوكادو مع حمص بليلة وأفوكادو وفجل وزيت زيتون وبابريكا."
+   },
+   "calories": 300,
+   "image": "avocado-hummus",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "hummus",
+   "qlubId": "kYXjk",
+   "category": "appetizers",
+   "name": {
+    "en": "Hummus",
+    "ar": "حمص"
+   },
+   "subtitle": {
+    "en": "Hummus",
+    "ar": "حمص"
+   },
+   "description": {
+    "en": "Hummus with hummus balila, olive oil, paprika, radish and parsley.",
+    "ar": "حمص مع حمص بليلة وزيت الزيتون والبابريكا والفجل والبقدونس."
+   },
+   "calories": 268,
+   "image": "hummus",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "french-fries",
+   "qlubId": "bqloo",
+   "category": "appetizers",
+   "name": {
+    "en": "French Fries",
+    "ar": "بطاطس مقلية"
+   },
+   "subtitle": {
+    "en": "French Fries",
+    "ar": "بطاطس مقلية"
+   },
+   "description": {
+    "en": "Crispy fries with our special sauce.",
+    "ar": "بطاطس مقلية مقرمشة مع صوصنا الخاص."
+   },
+   "calories": 400,
+   "image": "french-fries",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "batata-harra",
+   "qlubId": "XP6l1",
+   "category": "appetizers",
+   "name": {
+    "en": "Batata Harra",
+    "ar": "بطاطا حارة"
+   },
+   "subtitle": {
+    "en": "Batata Harra",
+    "ar": "بطاطا حارة"
+   },
+   "description": {
+    "en": "Fries tossed with garlic, coriander and chili, finished with lemon.",
+    "ar": "بطاطا مقلية مع الثوم والكزبرة والفلفل الحار، مطفية بالليمون."
+   },
+   "calories": 204,
+   "image": "batata-harra",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true,
+   "spicy": true
+  },
+  {
+   "id": "crazy-fries",
+   "qlubId": "d2n8k",
+   "category": "appetizers",
+   "name": {
+    "en": "Crazy Fries",
+    "ar": "كريزي فرايز"
+   },
+   "subtitle": {
+    "en": "Crazy Fries",
+    "ar": "كريزي فرايز"
+   },
+   "description": {
+    "en": "Crispy fries topped with spicy jalapeños, sauce, melted cheddar, fried onions and fried beetroot.",
+    "ar": "بطاطس مقرمشة مع شرائح الهالبينو الحارة والصوص وجبنة الشيدر السائلة والبصل المقلي والشمندر المقلي."
+   },
+   "calories": 780,
+   "image": "crazy-fries",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true,
+   "spicy": true
+  },
+  {
+   "id": "buffalo-shrimp",
+   "qlubId": "wvVml",
+   "category": "appetizers",
+   "name": {
+    "en": "Buffalo Shrimp",
+    "ar": "روبيان بافلو"
+   },
+   "subtitle": {
+    "en": "Buffalo Shrimp",
+    "ar": "روبيان بافلو"
+   },
+   "description": {
+    "en": "Golden shrimp tossed in mild buffalo sauce, served with tartar sauce. Contains sesame.",
+    "ar": "روبيان ذهبي مغموس بصوص البافلو معتدل الحرارة، يُقدَّم مع صوص التارتار. يحتوي على السمسم."
+   },
+   "calories": 670,
+   "image": "buffalo-shrimp",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "kibbeh",
+   "qlubId": "lmbgq",
+   "category": "appetizers",
+   "name": {
+    "en": "Kibbeh",
+    "ar": "كبة"
+   },
+   "subtitle": {
+    "en": "Kibbeh",
+    "ar": "كبة"
+   },
+   "description": {
+    "en": "Fried kibbeh with pomegranate, pomegranate molasses and lemon.",
+    "ar": "كبة مقلية تُقدَّم مع الرمان ودبس الرمان والليمون."
+   },
+   "calories": 495,
+   "image": "kibbeh",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mozzarella-cheetos",
+   "qlubId": "18DNZ",
+   "category": "appetizers",
+   "name": {
+    "en": "Mozzarella Cheetos",
+    "ar": "موزاريلا شيتوس"
+   },
+   "subtitle": {
+    "en": "Mozzarella Cheetos",
+    "ar": "موزاريلا شيتوس"
+   },
+   "description": {
+    "en": "Mozzarella with Cheetos crunch, served with cocktail sauce.",
+    "ar": "جبنة موزاريلا مع شيبس الشيتوس، تُقدَّم مع صوص الكوكتيل."
+   },
+   "calories": 480,
+   "image": "mozzarella-cheetos",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "potato-croquettes",
+   "qlubId": "mkKmW",
+   "category": "appetizers",
+   "name": {
+    "en": "Potato Croquettes",
+    "ar": "بطاطا كروكيت"
+   },
+   "subtitle": {
+    "en": "Potato Croquettes",
+    "ar": "بطاطا كروكيت"
+   },
+   "description": {
+    "en": "Mashed potato and fried vegetable croquettes with rosé sauce, parmesan and arugula.",
+    "ar": "كروكيت البطاطس المهروسة مع الخضار المقلية، بصوص الروزيه وجبنة البارميزان والجرجير."
+   },
+   "calories": 860,
+   "image": "potato-croquettes",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "dynamite-shrimp",
+   "qlubId": "nZ1mP",
+   "category": "appetizers",
+   "name": {
+    "en": "Dynamite Shrimp",
+    "ar": "روبيان ديناميت"
+   },
+   "subtitle": {
+    "en": "Dynamite Shrimp",
+    "ar": "روبيان ديناميت"
+   },
+   "description": {
+    "en": "Crispy shrimp in dynamite sauce with green onion and fresh potato chips. Contains sesame.",
+    "ar": "روبيان مقرمش بصوص الديناميت والبصل الأخضر مع شيبس البطاطس الطازجة. يحتوي على السمسم."
+   },
+   "calories": 500,
+   "image": "dynamite-shrimp",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "kebab-karaz",
+   "qlubId": "r2Zjr",
+   "category": "mains",
+   "name": {
+    "en": "Kebab Karaz",
+    "ar": "كباب كرز"
+   },
+   "subtitle": {
+    "en": "Kebab Karaz",
+    "ar": "كباب كرز"
+   },
+   "description": {
+    "en": "Lamb kebab in cherry sauce, served with a bread basket.",
+    "ar": "كباب لحم بصوص الكرز، يُقدَّم مع سلة خبز."
+   },
+   "image": "kebab-karaz",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "cheese-kofta",
+   "qlubId": "JRLvR",
+   "category": "mains",
+   "name": {
+    "en": "Cheese-Stuffed Kofta",
+    "ar": "كفتة بالجبن"
+   },
+   "subtitle": {
+    "en": "Cheese-Stuffed Kofta",
+    "ar": "كفتة بالجبن"
+   },
+   "description": {
+    "en": "Kofta stuffed with mozzarella and cheddar, served with mashed potato, gravy and pistachios.",
+    "ar": "كفتة محشوة بجبنة الموزاريلا والشيدر، تُقدَّم مع البطاطس المهروسة وصوص الغريفي والفستق الحلبي."
+   },
+   "calories": 655,
+   "image": "cheese-kofta",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "adicto-mix-grill",
+   "qlubId": "kYXrk",
+   "category": "mains",
+   "name": {
+    "en": "ADIC2 Special Mixed Grill",
+    "ar": "مشاوي أديكتو المشكّلة"
+   },
+   "subtitle": {
+    "en": "ADIC2 Special Mixed Grill",
+    "ar": "مشاوي أديكتو المشكّلة"
+   },
+   "description": {
+    "en": "Lamb kebab, shish tawook, chicken kebab, awsal and lamb chops, with grilled vegetables, fries, Arabic bread and pita.",
+    "ar": "تشكيلة من كباب اللحم والشيش طاووق وكباب الدجاج والأوصال والريش، تُقدَّم مع الخضار المشوية والبطاطس المقلية والخبز العربي وخبز البيتا."
+   },
+   "calories": 810,
+   "image": "adicto-mix-grill",
+   "background": "navy",
+   "available": true,
+   "signature": true
+  },
+  {
+   "id": "awsal",
+   "qlubId": "Do8GP",
+   "category": "mains",
+   "name": {
+    "en": "Awsal",
+    "ar": "أوصال"
+   },
+   "subtitle": {
+    "en": "Awsal",
+    "ar": "أوصال"
+   },
+   "description": {
+    "en": "Grilled cubes of meat on the skewer.",
+    "ar": "أوصال لحم مشوية على السيخ."
+   },
+   "image": "awsal",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chicken-kebab",
+   "qlubId": "6ZbJM",
+   "category": "mains",
+   "name": {
+    "en": "Chicken Kebab",
+    "ar": "كباب دجاج"
+   },
+   "subtitle": {
+    "en": "Chicken Kebab",
+    "ar": "كباب دجاج"
+   },
+   "description": {
+    "en": "Grilled chicken kebab.",
+    "ar": "كباب دجاج مشوي."
+   },
+   "image": "chicken-kebab",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "arayes",
+   "qlubId": "xW5xw",
+   "category": "mains",
+   "name": {
+    "en": "ADIC2 Arayes",
+    "ar": "عرايس أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Arayes",
+    "ar": "عرايس أديكتو"
+   },
+   "description": {
+    "en": "Bread stuffed with minced meat, toasted on the grill.",
+    "ar": "خبز محشي باللحم المفروم، محمّص على الشواية."
+   },
+   "image": "arayes",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "grilled-kibbeh",
+   "qlubId": "g6NYv",
+   "category": "mains",
+   "name": {
+    "en": "Grilled Kibbeh",
+    "ar": "كبة مشوية"
+   },
+   "subtitle": {
+    "en": "Grilled Kibbeh",
+    "ar": "كبة مشوية"
+   },
+   "description": {
+    "en": "Kibbeh, grilled.",
+    "ar": "كبة على الشواية."
+   },
+   "image": "grilled-kibbeh",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chicken-paella",
+   "qlubId": "ObJ6x",
+   "category": "mains",
+   "name": {
+    "en": "Chicken Paella",
+    "ar": "باييلا الدجاج"
+   },
+   "subtitle": {
+    "en": "Chicken Paella",
+    "ar": "باييلا الدجاج"
+   },
+   "description": {
+    "en": "Chicken paella, cooked the Spanish way.",
+    "ar": "باييلا الدجاج مطهوّة على الطريقة الإسبانية."
+   },
+   "calories": 470,
+   "image": "chicken-paella",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "seafood-paella",
+   "qlubId": "2rYZL",
+   "category": "mains",
+   "name": {
+    "en": "Seafood Paella",
+    "ar": "باييلا المأكولات البحرية"
+   },
+   "subtitle": {
+    "en": "Seafood Paella",
+    "ar": "باييلا المأكولات البحرية"
+   },
+   "description": {
+    "en": "Seafood paella, cooked the Spanish way.",
+    "ar": "باييلا المأكولات البحرية مطهوّة على الطريقة الإسبانية."
+   },
+   "calories": 590,
+   "image": "seafood-paella",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chicken-wine",
+   "qlubId": "Y7xjZ",
+   "category": "mains",
+   "name": {
+    "en": "Chicken Wine",
+    "ar": "تشيكن واين"
+   },
+   "subtitle": {
+    "en": "Chicken Wine",
+    "ar": "تشيكن واين"
+   },
+   "description": {
+    "en": "Chicken roll stuffed with smoked turkey, mozzarella and cream cheese, with mashed potato, sautéed vegetables and white wine sauce.",
+    "ar": "رول دجاج محشي بالحبش المدخّن وجبنة الموزاريلا وجبنة الكريمة، يُقدَّم مع البطاطس المهروسة والخضار السوتيه وصوص الوايت واين."
+   },
+   "calories": 1430,
+   "image": "chicken-wine",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "entrecote-steak",
+   "qlubId": "N8RrN",
+   "category": "mains",
+   "name": {
+    "en": "Entrecôte Steak",
+    "ar": "ستيك أنتركوت"
+   },
+   "subtitle": {
+    "en": "Entrecôte Steak",
+    "ar": "ستيك أنتركوت"
+   },
+   "description": {
+    "en": "Beef tenderloin steak with entrecôte sauce and crispy potatoes.",
+    "ar": "ستيك تندرلوين بقري بصوص الأنتركوت والبطاطس المقرمشة."
+   },
+   "calories": 1250,
+   "image": "entrecote-steak",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mixed-grill",
+   "qlubId": "LAL21",
+   "category": "mains",
+   "name": {
+    "en": "Mixed Grill",
+    "ar": "مشاوي مشكّلة"
+   },
+   "subtitle": {
+    "en": "Mixed Grill",
+    "ar": "مشاوي مشكّلة"
+   },
+   "description": {
+    "en": "Kebab and shish tawook with grilled vegetables, grilled marinated potatoes and Arabic bread with Turkish sauce.",
+    "ar": "تشكيلة من الكباب والشيش طاووق، تُقدَّم مع الخضار المشوية والبطاطس المتبّلة المشوية والخبز العربي بالصلصة التركية."
+   },
+   "calories": 610,
+   "image": "mixed-grill",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "kibbeh-bil-laban",
+   "qlubId": "3VwAL",
+   "category": "mains",
+   "name": {
+    "en": "Kibbeh Bil Laban",
+    "ar": "كبة باللبن"
+   },
+   "subtitle": {
+    "en": "Kibbeh Bil Laban",
+    "ar": "كبة باللبن"
+   },
+   "description": {
+    "en": "Kibbeh in yogurt sauce, served with vermicelli rice.",
+    "ar": "كبة باللبن، تُقدَّم مع الأرز بالشعيرية."
+   },
+   "calories": 674,
+   "image": "kibbeh-bil-laban",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lamb-kebab",
+   "qlubId": "Bq5JO",
+   "category": "mains",
+   "name": {
+    "en": "Lamb Kebab",
+    "ar": "كباب لحم"
+   },
+   "subtitle": {
+    "en": "Lamb Kebab",
+    "ar": "كباب لحم"
+   },
+   "description": {
+    "en": "Kebab with grilled vegetables, grilled marinated potatoes and Arabic bread with Turkish sauce.",
+    "ar": "كباب لحم مع الخضار المشوية والبطاطس المتبّلة المشوية والخبز العربي بالصلصة التركية."
+   },
+   "calories": 510,
+   "image": "lamb-kebab",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shish-tawook",
+   "qlubId": "ejNoW",
+   "category": "mains",
+   "name": {
+    "en": "Shish Tawook",
+    "ar": "شيش طاووق"
+   },
+   "subtitle": {
+    "en": "Shish Tawook",
+    "ar": "شيش طاووق"
+   },
+   "description": {
+    "en": "Shish tawook with grilled vegetables, grilled marinated potatoes and Arabic bread with Turkish sauce.",
+    "ar": "شيش طاووق مع الخضار المشوية والبطاطس المتبّلة المشوية والخبز العربي بالصلصة التركية."
+   },
+   "calories": 420,
+   "image": "shish-tawook",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lamb-chops",
+   "qlubId": "vA4N2",
+   "category": "mains",
+   "name": {
+    "en": "Lamb Chops, Red Wine Sauce",
+    "ar": "ريش الخروف بصوص الريد واين"
+   },
+   "subtitle": {
+    "en": "Lamb Chops, Red Wine Sauce",
+    "ar": "ريش الخروف بصوص الريد واين"
+   },
+   "description": {
+    "en": "Grilled lamb chops with red wine sauce and mashed potato.",
+    "ar": "ريش ضأن مشوية بصوص الريد واين، تُقدَّم مع البطاطس المهروسة."
+   },
+   "calories": 720,
+   "image": "lamb-chops",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chef-steak",
+   "qlubId": "83Qnl",
+   "category": "mains",
+   "name": {
+    "en": "Chef's Steak",
+    "ar": "ستيك الشيف"
+   },
+   "subtitle": {
+    "en": "Chef's Steak",
+    "ar": "ستيك الشيف"
+   },
+   "description": {
+    "en": "Beef tenderloin steak with butter-cooked vegetables and mashed potato, with your choice of mushroom or pepper sauce.",
+    "ar": "ستيك تندرلوين بقري مع خضار طازجة مطهوّة بالزبدة والبطاطس المهروسة، وصوص من اختيارك: الفطر أو الفلفل."
+   },
+   "calories": 1110,
+   "image": "chef-steak",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "steak-island",
+   "qlubId": "qYzl4",
+   "category": "mains",
+   "name": {
+    "en": "Steak Island",
+    "ar": "جزيرة اللحم"
+   },
+   "subtitle": {
+    "en": "Steak Island",
+    "ar": "جزيرة اللحم"
+   },
+   "description": {
+    "en": "Our crispy pasta bread topped with beef, onion, bell pepper, mozzarella, dynamite sauce and oregano.",
+    "ar": "خبز المعكرونة المقرمش على طريقتنا، مغطّى بقطع اللحم مع البصل والفلفل الرومي وجبنة الموزاريلا وصوص الديناميت والأوريغانو."
+   },
+   "calories": 1390,
+   "image": "steak-island",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chicken-mushroom",
+   "qlubId": "GJLGV",
+   "category": "mains",
+   "name": {
+    "en": "Chicken Mushroom",
+    "ar": "دجاج بالفطر"
+   },
+   "subtitle": {
+    "en": "Chicken Mushroom",
+    "ar": "دجاج بالفطر"
+   },
+   "description": {
+    "en": "Grilled chicken with vegetables, mashed potato and mushroom sauce.",
+    "ar": "دجاج مشوي يُقدَّم مع الخضار والبطاطس المهروسة وصوص الفطر."
+   },
+   "calories": 1230,
+   "image": "chicken-mushroom",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "adicto-burger",
+   "qlubId": "XP6le",
+   "category": "burgers",
+   "name": {
+    "en": "ADIC2 Burger",
+    "ar": "برجر أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Burger",
+    "ar": "برجر أديكتو"
+   },
+   "description": {
+    "en": "Angus beef with mint sauce, honey mustard, American cheddar, pickles and lollo lettuce in a brioche bun.",
+    "ar": "لحم أنجوس مع صوص النعناع والمسترد بالعسل وجبنة الشيدر الأمريكية والمخلل وخس اللولو، في خبز البريوش."
+   },
+   "calories": 530,
+   "image": "adicto-burger",
+   "background": "navy",
+   "available": true,
+   "signature": true
+  },
+  {
+   "id": "crispy-chicken-sliders",
+   "qlubId": "d2n8P",
+   "category": "burgers",
+   "name": {
+    "en": "Crispy Chicken Sliders",
+    "ar": "سلايدر دجاج مقرمش"
+   },
+   "subtitle": {
+    "en": "Crispy Chicken Sliders",
+    "ar": "سلايدر دجاج مقرمش"
+   },
+   "description": {
+    "en": "Crispy chicken with red cabbage slaw, ranch, cheese sauce, tomato and lollo lettuce in brioche.",
+    "ar": "دجاج مقرمش مع سلطة الملفوف الأحمر وصوص الرانش وصوص الجبن والطماطم وخس اللولو، في خبز البريوش."
+   },
+   "calories": 610,
+   "image": "crispy-chicken-sliders",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "adicto-sliders",
+   "qlubId": "wvVmL",
+   "category": "burgers",
+   "name": {
+    "en": "ADIC2 Sliders",
+    "ar": "سلايدر أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Sliders",
+    "ar": "سلايدر أديكتو"
+   },
+   "description": {
+    "en": "Angus beef with mint, honey mustard, American cheddar, pickles and lollo lettuce in brioche.",
+    "ar": "لحم أنجوس مع النعناع والمسترد بالعسل وجبنة الشيدر الأمريكية والمخلل وخس اللولو، في خبز البريوش."
+   },
+   "calories": 590,
+   "image": "adicto-sliders",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "club-sandwich",
+   "qlubId": "71KO4",
+   "category": "burgers",
+   "name": {
+    "en": "Club Sandwich",
+    "ar": "كلوب ساندويتش"
+   },
+   "subtitle": {
+    "en": "Club Sandwich",
+    "ar": "كلوب ساندويتش"
+   },
+   "description": {
+    "en": "Toasted bread layered with smoked turkey breast and fried egg.",
+    "ar": "خبز توست محمّص مع صدر الحبش المدخّن والبيض المقلي."
+   },
+   "calories": 220,
+   "image": "club-sandwich",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chicken-quesadilla",
+   "qlubId": "ALV1k",
+   "category": "burgers",
+   "name": {
+    "en": "Chicken Quesadilla",
+    "ar": "كاساديا دجاج"
+   },
+   "subtitle": {
+    "en": "Chicken Quesadilla",
+    "ar": "كاساديا دجاج"
+   },
+   "description": {
+    "en": "Mexican-spiced chicken cooked with onion and bell pepper, in a tortilla with mozzarella, cheddar and dynamite sauce.",
+    "ar": "دجاج متبّل على الطريقة المكسيكية مطهو مع البصل والفلفل الرومي، في خبز التورتيلا مع الموزاريلا والشيدر وصوص الديناميت."
+   },
+   "calories": 495,
+   "image": "chicken-quesadilla",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "crispy-chicken-burger",
+   "qlubId": "Zr3ly",
+   "category": "burgers",
+   "name": {
+    "en": "Crispy Chicken Burger",
+    "ar": "برجر دجاج مقرمش"
+   },
+   "subtitle": {
+    "en": "Crispy Chicken Burger",
+    "ar": "برجر دجاج مقرمش"
+   },
+   "description": {
+    "en": "Crispy chicken with red cabbage slaw, ranch and cheese sauce in a brioche bun.",
+    "ar": "دجاج مقرمش مع سلطة الملفوف الأحمر وصوص الرانش وصوص الجبن، في خبز البريوش."
+   },
+   "calories": 630,
+   "image": "crispy-chicken-burger",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mushroom-risotto",
+   "qlubId": "mkKrW",
+   "category": "pasta",
+   "name": {
+    "en": "Mushroom Risotto",
+    "ar": "ريزوتو الفطر"
+   },
+   "subtitle": {
+    "en": "Mushroom Risotto",
+    "ar": "ريزوتو الفطر"
+   },
+   "description": {
+    "en": "Italian rice with mushrooms and shimeji in a cream sauce with parmesan, mint and basil.",
+    "ar": "أرز إيطالي مع الفطر وفطر الشيميجي بصلصة الكريمة وجبنة البارميزان والنعناع والريحان."
+   },
+   "calories": 1260,
+   "image": "mushroom-risotto",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "spinach-ravioli",
+   "qlubId": "lmbrq",
+   "category": "pasta",
+   "name": {
+    "en": "Spinach Ravioli",
+    "ar": "رافيولي السبانخ"
+   },
+   "subtitle": {
+    "en": "Spinach Ravioli",
+    "ar": "رافيولي السبانخ"
+   },
+   "description": {
+    "en": "Ravioli stuffed with spinach and ricotta, in pink sauce with parmesan and basil.",
+    "ar": "رافيولي محشية بالسبانخ وجبنة الريكوتا، بالصوص الوردي وجبنة البارميزان والريحان."
+   },
+   "calories": 720,
+   "image": "spinach-ravioli",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "saffron-shrimp-risotto",
+   "qlubId": "nZ1rP",
+   "category": "pasta",
+   "name": {
+    "en": "Saffron Shrimp Risotto",
+    "ar": "ريزوتو الروبيان بالزعفران"
+   },
+   "subtitle": {
+    "en": "Saffron Shrimp Risotto",
+    "ar": "ريزوتو الروبيان بالزعفران"
+   },
+   "description": {
+    "en": "Italian rice with saffron, shrimp, cream, parmesan and basil.",
+    "ar": "أرز إيطالي مع الزعفران والروبيان والكريمة وجبنة البارميزان والريحان."
+   },
+   "calories": 810,
+   "image": "saffron-shrimp-risotto",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "fettuccine-alfredo",
+   "qlubId": "yvGjy",
+   "category": "pasta",
+   "name": {
+    "en": "Fettuccine Alfredo",
+    "ar": "فيتوتشيني ألفريدو"
+   },
+   "subtitle": {
+    "en": "Fettuccine Alfredo",
+    "ar": "فيتوتشيني ألفريدو"
+   },
+   "description": {
+    "en": "Fettuccine in creamy Alfredo sauce with mushrooms.",
+    "ar": "فيتوتشيني بصلصة الألفريدو الكريمية مع الفطر."
+   },
+   "calories": 560,
+   "image": "fettuccine-alfredo",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "spaghetti-pomodoro-chicken",
+   "qlubId": "RPJvG",
+   "category": "pasta",
+   "name": {
+    "en": "Spaghetti Pomodoro, Chicken Parmigiana",
+    "ar": "سباغيتي بومودورو مع دجاج بارميجانا"
+   },
+   "subtitle": {
+    "en": "Spaghetti Pomodoro, Chicken Parmigiana",
+    "ar": "سباغيتي بومودورو مع دجاج بارميجانا"
+   },
+   "description": {
+    "en": "Italian spaghetti in pomodoro sauce with chicken parmigiana.",
+    "ar": "سباغيتي إيطالية بصوص البومودورو مع دجاج البارميجانا."
+   },
+   "calories": 820,
+   "image": "spaghetti-pomodoro-chicken",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mac-and-cheese",
+   "qlubId": "oDPr3",
+   "category": "pasta",
+   "name": {
+    "en": "Mac & Cheese",
+    "ar": "ماك آند تشيز"
+   },
+   "subtitle": {
+    "en": "Mac & Cheese",
+    "ar": "ماك آند تشيز"
+   },
+   "description": {
+    "en": "Pasta in cheese and cream, topped with red Cheetos.",
+    "ar": "معكرونة بالجبن والكريمة، مغطّاة بالشيتوس الأحمر."
+   },
+   "calories": 920,
+   "image": "mac-and-cheese",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "chicken-pesto-pizza",
+   "qlubId": "KyLlx",
+   "category": "pizza",
+   "name": {
+    "en": "Chicken Pesto Pizza",
+    "ar": "بيتزا دجاج بيستو"
+   },
+   "subtitle": {
+    "en": "Chicken Pesto Pizza",
+    "ar": "بيتزا دجاج بيستو"
+   },
+   "description": {
+    "en": "Italian pizza dough with mozzarella, pesto, grilled chicken, cherry tomatoes and oregano.",
+    "ar": "عجينة بيتزا إيطالية مع جبنة الموزاريلا وصوص البيستو والدجاج المشوي والطماطم الكرزية والأوريغانو."
+   },
+   "calories": 1350,
+   "image": "chicken-pesto-pizza",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "vegetable-pizza",
+   "qlubId": "QyL2K",
+   "category": "pizza",
+   "name": {
+    "en": "Vegetable Pizza",
+    "ar": "بيتزا الخضار"
+   },
+   "subtitle": {
+    "en": "Vegetable Pizza",
+    "ar": "بيتزا الخضار"
+   },
+   "description": {
+    "en": "Neapolitan dough with mozzarella, tomato sauce, vegetables and oregano.",
+    "ar": "عجينة نابولي مع جبنة الموزاريلا وصوص الطماطم والخضار والأوريغانو."
+   },
+   "calories": 1100,
+   "image": "vegetable-pizza",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "adicto-pizza",
+   "qlubId": "bqlno",
+   "category": "pizza",
+   "name": {
+    "en": "ADIC2 Pizza",
+    "ar": "بيتزا أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Pizza",
+    "ar": "بيتزا أديكتو"
+   },
+   "description": {
+    "en": "Neapolitan dough with mozzarella, béchamel and oregano, topped with grilled chicken, smoked turkey, vegetables, ranch and basil sauce.",
+    "ar": "عجينة نابولي مع الموزاريلا وصوص البشاميل والأوريغانو، مع الدجاج المشوي والحبش المدخّن والخضار وصوص الرانش وصوص الريحان."
+   },
+   "calories": 1610,
+   "image": "adicto-pizza",
+   "background": "navy",
+   "available": true,
+   "signature": true
+  },
+  {
+   "id": "pepperoni-pizza",
+   "qlubId": "XP611",
+   "category": "pizza",
+   "name": {
+    "en": "Pepperoni Pizza",
+    "ar": "بيتزا بيبروني"
+   },
+   "subtitle": {
+    "en": "Pepperoni Pizza",
+    "ar": "بيتزا بيبروني"
+   },
+   "description": {
+    "en": "Neapolitan pizza with mozzarella, tomato sauce, oregano and pepperoni.",
+    "ar": "بيتزا نابولي مع جبنة الموزاريلا وصوص الطماطم والأوريغانو والبيبروني."
+   },
+   "calories": 1150,
+   "image": "pepperoni-pizza",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "margherita-pizza",
+   "qlubId": "d2nrk",
+   "category": "pizza",
+   "name": {
+    "en": "Margherita Pizza",
+    "ar": "بيتزا مارغريتا"
+   },
+   "subtitle": {
+    "en": "Margherita Pizza",
+    "ar": "بيتزا مارغريتا"
+   },
+   "description": {
+    "en": "Neapolitan pizza with mozzarella, tomato sauce and oregano.",
+    "ar": "بيتزا نابولي مع جبنة الموزاريلا وصوص الطماطم والأوريغانو."
+   },
+   "calories": 1060,
+   "image": "margherita-pizza",
+   "background": "navy",
+   "available": true,
+   "vegetarian": true
+  },
+  {
+   "id": "adicto-kunafa",
+   "qlubId": "vA4l2",
+   "category": "desserts",
+   "name": {
+    "en": "ADIC2 Kunafa",
+    "ar": "كنافة أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Kunafa",
+    "ar": "كنافة أديكتو"
+   },
+   "calories": 600,
+   "image": "adicto-kunafa",
+   "background": "navy",
+   "available": true,
+   "signature": true
+  },
+  {
+   "id": "adicto-tiramisu",
+   "qlubId": "qYzo4",
+   "category": "desserts",
+   "name": {
+    "en": "ADIC2 Tiramisu",
+    "ar": "تيراميسو أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Tiramisu",
+    "ar": "تيراميسو أديكتو"
+   },
+   "calories": 400,
+   "image": "adicto-tiramisu",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "honey-cake",
+   "qlubId": "ejNrW",
+   "category": "desserts",
+   "name": {
+    "en": "Honey Cake",
+    "ar": "كيكة العسل"
+   },
+   "subtitle": {
+    "en": "Honey Cake",
+    "ar": "كيكة العسل"
+   },
+   "calories": 650,
+   "image": "honey-cake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "creme-brulee",
+   "qlubId": "Y7xQZ",
+   "category": "desserts",
+   "name": {
+    "en": "Crème Brûlée",
+    "ar": "كريم بروليه"
+   },
+   "subtitle": {
+    "en": "Crème Brûlée",
+    "ar": "كريم بروليه"
+   },
+   "calories": 400,
+   "image": "creme-brulee",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chocolate-fondue",
+   "qlubId": "N8RvN",
+   "category": "desserts",
+   "name": {
+    "en": "Chocolate Fondue",
+    "ar": "فوندو الشوكولاتة"
+   },
+   "subtitle": {
+    "en": "Chocolate Fondue",
+    "ar": "فوندو الشوكولاتة"
+   },
+   "calories": 900,
+   "image": "chocolate-fondue",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "om-ali",
+   "qlubId": "Bq5AO",
+   "category": "desserts",
+   "name": {
+    "en": "Om Ali",
+    "ar": "أم علي"
+   },
+   "subtitle": {
+    "en": "Om Ali",
+    "ar": "أم علي"
+   },
+   "image": "om-ali",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chocolate-brownie",
+   "qlubId": "VvLXq",
+   "category": "desserts",
+   "name": {
+    "en": "Chocolate Brownie",
+    "ar": "براوني الشوكولاتة"
+   },
+   "subtitle": {
+    "en": "Chocolate Brownie",
+    "ar": "براوني الشوكولاتة"
+   },
+   "calories": 550,
+   "image": "chocolate-brownie",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mini-pancakes",
+   "qlubId": "4PdDz",
+   "category": "desserts",
+   "name": {
+    "en": "Mini Pancakes",
+    "ar": "ميني بان كيك"
+   },
+   "subtitle": {
+    "en": "Mini Pancakes",
+    "ar": "ميني بان كيك"
+   },
+   "calories": 350,
+   "image": "mini-pancakes",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "date-cake",
+   "qlubId": "83Qwl",
+   "category": "desserts",
+   "name": {
+    "en": "Date Cake",
+    "ar": "كيكة التمر"
+   },
+   "subtitle": {
+    "en": "Date Cake",
+    "ar": "كيكة التمر"
+   },
+   "calories": 280,
+   "image": "date-cake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "luqaimat",
+   "qlubId": "03Omy",
+   "category": "desserts",
+   "name": {
+    "en": "Luqaimat",
+    "ar": "لقيمات"
+   },
+   "subtitle": {
+    "en": "Luqaimat",
+    "ar": "لقيمات"
+   },
+   "calories": 510,
+   "image": "luqaimat",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "pineapple-ice-cream",
+   "qlubId": "71Ke4",
+   "category": "desserts",
+   "name": {
+    "en": "Pineapple Ice Cream",
+    "ar": "آيس كريم الأناناس"
+   },
+   "subtitle": {
+    "en": "Pineapple Ice Cream",
+    "ar": "آيس كريم الأناناس"
+   },
+   "calories": 120,
+   "image": "pineapple-ice-cream",
+   "background": "navy",
+   "available": false
+  },
+  {
+   "id": "nutella-crepe",
+   "qlubId": "ALVZk",
+   "category": "desserts",
+   "name": {
+    "en": "Nutella Crêpe",
+    "ar": "كريب نوتيلا"
+   },
+   "subtitle": {
+    "en": "Nutella Crêpe",
+    "ar": "كريب نوتيلا"
+   },
+   "calories": 500,
+   "image": "nutella-crepe",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "french-toast",
+   "qlubId": "Zr3Py",
+   "category": "desserts",
+   "name": {
+    "en": "Nutella & Caramel French Toast",
+    "ar": "فرنش توست بالنوتيلا والكراميل"
+   },
+   "subtitle": {
+    "en": "Nutella & Caramel French Toast",
+    "ar": "فرنش توست بالنوتيلا والكراميل"
+   },
+   "calories": 650,
+   "image": "french-toast",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "san-sebastian-nutella",
+   "qlubId": "GJLvV",
+   "category": "desserts",
+   "name": {
+    "en": "San Sebastián Nutella",
+    "ar": "سان سيباستيان نوتيلا"
+   },
+   "subtitle": {
+    "en": "San Sebastián Nutella",
+    "ar": "سان سيباستيان نوتيلا"
+   },
+   "calories": 280,
+   "image": "san-sebastian-nutella",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "san-sebastian-caramel",
+   "qlubId": "5qXe8",
+   "category": "desserts",
+   "name": {
+    "en": "San Sebastián Caramel",
+    "ar": "سان سيباستيان كراميل"
+   },
+   "subtitle": {
+    "en": "San Sebastián Caramel",
+    "ar": "سان سيباستيان كراميل"
+   },
+   "calories": 280,
+   "image": "san-sebastian-caramel",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lava-cake",
+   "qlubId": "zn8RD",
+   "category": "desserts",
+   "name": {
+    "en": "Nutella Pistachio Lava Cake",
+    "ar": "لافا كيك نوتيلا وفستق"
+   },
+   "subtitle": {
+    "en": "Nutella Pistachio Lava Cake",
+    "ar": "لافا كيك نوتيلا وفستق"
+   },
+   "calories": 450,
+   "image": "lava-cake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "karak-tea-pot",
+   "qlubId": "ALVQ7",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Karak Tea Pot",
+    "ar": "إبريق شاي كرك"
+   },
+   "subtitle": {
+    "en": "Karak Tea Pot",
+    "ar": "إبريق شاي كرك"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "hot-water-mint",
+   "qlubId": "nZ1D8",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Hot Water with Mint",
+    "ar": "ماء ساخن بالنعناع"
+   },
+   "subtitle": {
+    "en": "Hot Water with Mint",
+    "ar": "ماء ساخن بالنعناع"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "sahlab-cinnamon",
+   "qlubId": "Zr34m",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Sahlab with Cinnamon",
+    "ar": "سحلب بالقرفة"
+   },
+   "subtitle": {
+    "en": "Sahlab with Cinnamon",
+    "ar": "سحلب بالقرفة"
+   },
+   "image": "sahlab-cinnamon",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "sahlab-pistachio",
+   "qlubId": "zn8eA",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Sahlab with Pistachio",
+    "ar": "سحلب بالفستق"
+   },
+   "subtitle": {
+    "en": "Sahlab with Pistachio",
+    "ar": "سحلب بالفستق"
+   },
+   "image": "sahlab-pistachio",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "sahlab",
+   "qlubId": "yvGr5",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Sahlab",
+    "ar": "سحلب سادة"
+   },
+   "subtitle": {
+    "en": "Sahlab",
+    "ar": "سحلب سادة"
+   },
+   "image": "sahlab",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "ginger-milk",
+   "qlubId": "oDPJP",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Ginger with Milk",
+    "ar": "زنجبيل بالحليب"
+   },
+   "subtitle": {
+    "en": "Ginger with Milk",
+    "ar": "زنجبيل بالحليب"
+   },
+   "image": "ginger-milk",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "nirvara",
+   "qlubId": "RPJQQ",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Nirvara",
+    "ar": "نيرفارا"
+   },
+   "subtitle": {
+    "en": "Nirvara",
+    "ar": "نيرفارا"
+   },
+   "image": "nirvara",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "anise-tea",
+   "qlubId": "M81wB",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Anise Tea",
+    "ar": "شاي يانسون"
+   },
+   "subtitle": {
+    "en": "Anise Tea",
+    "ar": "شاي يانسون"
+   },
+   "image": "anise-tea",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "hot-chocolate-marshmallow",
+   "qlubId": "PoLb1",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Hot Chocolate with Marshmallows",
+    "ar": "شوكولاتة ساخنة بالمارشميلو"
+   },
+   "subtitle": {
+    "en": "Hot Chocolate with Marshmallows",
+    "ar": "شوكولاتة ساخنة بالمارشميلو"
+   },
+   "image": "hot-chocolate-marshmallow",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "hot-chocolate-orange",
+   "qlubId": "r2ZJ5",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Orange Hot Chocolate",
+    "ar": "شوكولاتة ساخنة بالبرتقال"
+   },
+   "subtitle": {
+    "en": "Orange Hot Chocolate",
+    "ar": "شوكولاتة ساخنة بالبرتقال"
+   },
+   "image": "hot-chocolate-orange",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "black-coffee",
+   "qlubId": "QyLK1",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Black Coffee",
+    "ar": "قهوة سوداء"
+   },
+   "subtitle": {
+    "en": "Black Coffee",
+    "ar": "قهوة سوداء"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "ginger-lemon-honey",
+   "qlubId": "KyL5B",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Ginger, Lemon & Honey",
+    "ar": "زنجبيل وليمون بالعسل"
+   },
+   "subtitle": {
+    "en": "Ginger, Lemon & Honey",
+    "ar": "زنجبيل وليمون بالعسل"
+   },
+   "image": "ginger-lemon-honey",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "red-tea-pot",
+   "qlubId": "kYXLj",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Red Tea Pot",
+    "ar": "إبريق شاي أحمر"
+   },
+   "subtitle": {
+    "en": "Red Tea Pot",
+    "ar": "إبريق شاي أحمر"
+   },
+   "image": "red-tea-pot",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "green-tea-pot",
+   "qlubId": "JRLVv",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Green Tea Pot",
+    "ar": "إبريق شاي أخضر"
+   },
+   "subtitle": {
+    "en": "Green Tea Pot",
+    "ar": "إبريق شاي أخضر"
+   },
+   "image": "green-tea-pot",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "green-tea",
+   "qlubId": "WokAj",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Green Tea",
+    "ar": "شاي أخضر"
+   },
+   "subtitle": {
+    "en": "Green Tea",
+    "ar": "شاي أخضر"
+   },
+   "calories": 2,
+   "image": "green-tea",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "karak-tea",
+   "qlubId": "jxdol",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Karak Tea",
+    "ar": "شاي كرك"
+   },
+   "subtitle": {
+    "en": "Karak Tea",
+    "ar": "شاي كرك"
+   },
+   "calories": 2,
+   "image": "karak-tea",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "red-tea",
+   "qlubId": "ObJX2",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Red Tea",
+    "ar": "شاي أحمر"
+   },
+   "subtitle": {
+    "en": "Red Tea",
+    "ar": "شاي أحمر"
+   },
+   "calories": 2,
+   "image": "red-tea",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "saudi-coffee",
+   "qlubId": "2rYow",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Saudi Coffee",
+    "ar": "قهوة سعودية"
+   },
+   "subtitle": {
+    "en": "Saudi Coffee",
+    "ar": "قهوة سعودية"
+   },
+   "calories": 70,
+   "image": "saudi-coffee",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "turkish-coffee-double",
+   "qlubId": "xW5eK",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Turkish Coffee, Double",
+    "ar": "قهوة تركية دبل"
+   },
+   "subtitle": {
+    "en": "Turkish Coffee, Double",
+    "ar": "قهوة تركية دبل"
+   },
+   "image": "turkish-coffee-double",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "turkish-coffee-single",
+   "qlubId": "bqlLW",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Turkish Coffee, Single",
+    "ar": "قهوة تركية سنجل"
+   },
+   "subtitle": {
+    "en": "Turkish Coffee, Single",
+    "ar": "قهوة تركية سنجل"
+   },
+   "image": "turkish-coffee-single",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "v60-hot",
+   "qlubId": "XP67e",
+   "category": "hot-drinks",
+   "name": {
+    "en": "V60",
+    "ar": "V60 ساخن"
+   },
+   "subtitle": {
+    "en": "V60",
+    "ar": "V60 ساخن"
+   },
+   "image": "v60-hot",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "chemex",
+   "qlubId": "d2nLP",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Chemex",
+    "ar": "كيمكس"
+   },
+   "subtitle": {
+    "en": "Chemex",
+    "ar": "كيمكس"
+   },
+   "image": "chemex",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "americano",
+   "qlubId": "wvVJL",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Americano",
+    "ar": "أمريكانو"
+   },
+   "subtitle": {
+    "en": "Americano",
+    "ar": "أمريكانو"
+   },
+   "calories": 2,
+   "image": "americano",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "mochaccino",
+   "qlubId": "Do8zv",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Mochaccino",
+    "ar": "موكاتشينو"
+   },
+   "subtitle": {
+    "en": "Mochaccino",
+    "ar": "موكاتشينو"
+   },
+   "image": "mochaccino",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "hot-chocolate",
+   "qlubId": "6ZboX",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Hot Chocolate",
+    "ar": "شوكولاتة ساخنة"
+   },
+   "subtitle": {
+    "en": "Hot Chocolate",
+    "ar": "شوكولاتة ساخنة"
+   },
+   "calories": 584,
+   "image": "hot-chocolate",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "pistachio-latte",
+   "qlubId": "g6NLg",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Pistachio Latte",
+    "ar": "لاتيه بالفستق"
+   },
+   "subtitle": {
+    "en": "Pistachio Latte",
+    "ar": "لاتيه بالفستق"
+   },
+   "calories": 439,
+   "image": "pistachio-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "spanish-latte",
+   "qlubId": "LALGX",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Spanish Latte",
+    "ar": "سبانش لاتيه"
+   },
+   "subtitle": {
+    "en": "Spanish Latte",
+    "ar": "سبانش لاتيه"
+   },
+   "calories": 197,
+   "image": "spanish-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "caramel-latte",
+   "qlubId": "3Vwon",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Caramel Latte",
+    "ar": "كراميل لاتيه"
+   },
+   "subtitle": {
+    "en": "Caramel Latte",
+    "ar": "كراميل لاتيه"
+   },
+   "calories": 131,
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "cafe-latte",
+   "qlubId": "ejNLg",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Café Latte",
+    "ar": "كافيه لاتيه"
+   },
+   "subtitle": {
+    "en": "Café Latte",
+    "ar": "كافيه لاتيه"
+   },
+   "calories": 135,
+   "image": "cafe-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "flat-white",
+   "qlubId": "vA4LA",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Flat White",
+    "ar": "فلات وايت"
+   },
+   "subtitle": {
+    "en": "Flat White",
+    "ar": "فلات وايت"
+   },
+   "calories": 110,
+   "image": "flat-white",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "cortado",
+   "qlubId": "qYzyZ",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Cortado",
+    "ar": "كورتادو"
+   },
+   "subtitle": {
+    "en": "Cortado",
+    "ar": "كورتادو"
+   },
+   "calories": 38,
+   "image": "cortado",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "macchiato",
+   "qlubId": "18DoM",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Macchiato",
+    "ar": "ماكياتو"
+   },
+   "subtitle": {
+    "en": "Macchiato",
+    "ar": "ماكياتو"
+   },
+   "calories": 105,
+   "image": "macchiato",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "cappuccino",
+   "qlubId": "Y7x0D",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Cappuccino",
+    "ar": "كابتشينو"
+   },
+   "subtitle": {
+    "en": "Cappuccino",
+    "ar": "كابتشينو"
+   },
+   "calories": 123,
+   "image": "cappuccino",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "espresso-double",
+   "qlubId": "mkKL8",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Espresso, Double",
+    "ar": "إسبريسو دبل"
+   },
+   "subtitle": {
+    "en": "Espresso, Double",
+    "ar": "إسبريسو دبل"
+   },
+   "calories": 4,
+   "image": "espresso-double",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "espresso-single",
+   "qlubId": "lmbL1",
+   "category": "hot-drinks",
+   "name": {
+    "en": "Espresso, Single",
+    "ar": "إسبريسو سنجل"
+   },
+   "subtitle": {
+    "en": "Espresso, Single",
+    "ar": "إسبريسو سنجل"
+   },
+   "calories": 2,
+   "image": "espresso-single",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "strawberry-milkshake",
+   "qlubId": "N8Rx6",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Strawberry Milkshake",
+    "ar": "ميلك شيك فراولة"
+   },
+   "subtitle": {
+    "en": "Strawberry Milkshake",
+    "ar": "ميلك شيك فراولة"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "pistachio-milkshake",
+   "qlubId": "Bq5Ll",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Pistachio Milkshake",
+    "ar": "ميلك شيك فستق"
+   },
+   "subtitle": {
+    "en": "Pistachio Milkshake",
+    "ar": "ميلك شيك فستق"
+   },
+   "image": "pistachio-milkshake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "adicto-iced-shaken",
+   "qlubId": "ALV37",
+   "category": "cold-drinks",
+   "name": {
+    "en": "ADIC2 Iced Shaken",
+    "ar": "أديكتو شيكن مثلّج"
+   },
+   "subtitle": {
+    "en": "ADIC2 Iced Shaken",
+    "ar": "أديكتو شيكن مثلّج"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "choco-cream-frappe",
+   "qlubId": "83QxB",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Choco Cream Frappé",
+    "ar": "فرابيه شوكو كريم"
+   },
+   "subtitle": {
+    "en": "Choco Cream Frappé",
+    "ar": "فرابيه شوكو كريم"
+   },
+   "image": "choco-cream-frappe",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "oreo-frappe",
+   "qlubId": "Zr3Mm",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Oreo Frappé",
+    "ar": "فرابيه أوريو"
+   },
+   "subtitle": {
+    "en": "Oreo Frappé",
+    "ar": "فرابيه أوريو"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "raspberry-milkshake",
+   "qlubId": "zn8MA",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Raspberry Milkshake",
+    "ar": "ميلك شيك توت"
+   },
+   "subtitle": {
+    "en": "Raspberry Milkshake",
+    "ar": "ميلك شيك توت"
+   },
+   "image": "raspberry-milkshake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lotus-milkshake",
+   "qlubId": "M81jB",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Lotus Milkshake",
+    "ar": "ميلك شيك لوتس"
+   },
+   "subtitle": {
+    "en": "Lotus Milkshake",
+    "ar": "ميلك شيك لوتس"
+   },
+   "image": "lotus-milkshake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "oreo-milkshake",
+   "qlubId": "GJLxZ",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Oreo Milkshake",
+    "ar": "ميلك شيك أوريو"
+   },
+   "subtitle": {
+    "en": "Oreo Milkshake",
+    "ar": "ميلك شيك أوريو"
+   },
+   "image": "oreo-milkshake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "passion-fruit-milkshake",
+   "qlubId": "5qXBP",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Passion Fruit Milkshake",
+    "ar": "ميلك شيك باشن فروت"
+   },
+   "subtitle": {
+    "en": "Passion Fruit Milkshake",
+    "ar": "ميلك شيك باشن فروت"
+   },
+   "image": "passion-fruit-milkshake",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-americano",
+   "qlubId": "VvLbQ",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced Americano",
+    "ar": "آيس أمريكانو"
+   },
+   "subtitle": {
+    "en": "Iced Americano",
+    "ar": "آيس أمريكانو"
+   },
+   "calories": 2,
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-v60",
+   "qlubId": "4PdWr",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced V60",
+    "ar": "V60 مثلّج"
+   },
+   "subtitle": {
+    "en": "Iced V60",
+    "ar": "V60 مثلّج"
+   },
+   "calories": 3,
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-dark-mocha",
+   "qlubId": "03O4v",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced Dark Mocha Latte",
+    "ar": "آيس دارك موكا لاتيه"
+   },
+   "subtitle": {
+    "en": "Iced Dark Mocha Latte",
+    "ar": "آيس دارك موكا لاتيه"
+   },
+   "calories": 127,
+   "image": "iced-dark-mocha",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-pistachio-latte",
+   "qlubId": "PoLx1",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced Pistachio Latte",
+    "ar": "آيس لاتيه بالفستق"
+   },
+   "subtitle": {
+    "en": "Iced Pistachio Latte",
+    "ar": "آيس لاتيه بالفستق"
+   },
+   "calories": 439,
+   "image": "iced-pistachio-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-spanish-latte",
+   "qlubId": "QyLx1",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced Spanish Latte",
+    "ar": "آيس سبانش لاتيه"
+   },
+   "subtitle": {
+    "en": "Iced Spanish Latte",
+    "ar": "آيس سبانش لاتيه"
+   },
+   "calories": 197,
+   "image": "iced-spanish-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-caramel-latte",
+   "qlubId": "KyLxB",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced Caramel Latte",
+    "ar": "آيس كراميل لاتيه"
+   },
+   "subtitle": {
+    "en": "Iced Caramel Latte",
+    "ar": "آيس كراميل لاتيه"
+   },
+   "calories": 123,
+   "image": "iced-caramel-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "iced-latte",
+   "qlubId": "71KBv",
+   "category": "cold-drinks",
+   "name": {
+    "en": "Iced Latte",
+    "ar": "آيس لاتيه"
+   },
+   "subtitle": {
+    "en": "Iced Latte",
+    "ar": "آيس لاتيه"
+   },
+   "calories": 123,
+   "image": "iced-latte",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "strawberry-smoothie",
+   "qlubId": "RPJRQ",
+   "category": "juices",
+   "name": {
+    "en": "Strawberry Smoothie",
+    "ar": "سموذي فراولة"
+   },
+   "subtitle": {
+    "en": "Strawberry Smoothie",
+    "ar": "سموذي فراولة"
+   },
+   "image": "strawberry-smoothie",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "raspberry-smoothie",
+   "qlubId": "2rY5w",
+   "category": "juices",
+   "name": {
+    "en": "Raspberry Smoothie",
+    "ar": "سموذي توت"
+   },
+   "subtitle": {
+    "en": "Raspberry Smoothie",
+    "ar": "سموذي توت"
+   },
+   "image": "raspberry-smoothie",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "pineapple-orange",
+   "qlubId": "r2Z55",
+   "category": "juices",
+   "name": {
+    "en": "Pineapple Orange",
+    "ar": "أناناس وبرتقال"
+   },
+   "subtitle": {
+    "en": "Pineapple Orange",
+    "ar": "أناناس وبرتقال"
+   },
+   "image": "pineapple-orange",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "pineapple-juice",
+   "qlubId": "kYXzj",
+   "category": "juices",
+   "name": {
+    "en": "Pineapple Juice",
+    "ar": "عصير أناناس"
+   },
+   "subtitle": {
+    "en": "Pineapple Juice",
+    "ar": "عصير أناناس"
+   },
+   "image": "pineapple-juice",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "passion-fruit-smoothie",
+   "qlubId": "JRLxv",
+   "category": "juices",
+   "name": {
+    "en": "Passion Fruit Smoothie",
+    "ar": "سموذي باشن فروت"
+   },
+   "subtitle": {
+    "en": "Passion Fruit Smoothie",
+    "ar": "سموذي باشن فروت"
+   },
+   "image": "passion-fruit-smoothie",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "adicto-tropicana",
+   "qlubId": "xW5QK",
+   "category": "juices",
+   "name": {
+    "en": "ADIC2 Tropicana Cocktail",
+    "ar": "كوكتيل تروبيكانا أديكتو"
+   },
+   "subtitle": {
+    "en": "ADIC2 Tropicana Cocktail",
+    "ar": "كوكتيل تروبيكانا أديكتو"
+   },
+   "image": "adicto-tropicana",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "lemon-mint",
+   "qlubId": "Do8xv",
+   "category": "juices",
+   "name": {
+    "en": "Lemon & Mint",
+    "ar": "ليمون ونعناع"
+   },
+   "subtitle": {
+    "en": "Lemon & Mint",
+    "ar": "ليمون ونعناع"
+   },
+   "calories": 314,
+   "image": "lemon-mint",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "orange-juice",
+   "qlubId": "ObJ12",
+   "category": "juices",
+   "name": {
+    "en": "Orange Juice",
+    "ar": "عصير برتقال"
+   },
+   "subtitle": {
+    "en": "Orange Juice",
+    "ar": "عصير برتقال"
+   },
+   "image": "orange-juice",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "karkadeh",
+   "qlubId": "bql5W",
+   "category": "mojito",
+   "name": {
+    "en": "Karkadeh: Passion Fruit, Shami Berry or Pomegranate",
+    "ar": "كركديه: باشن فروت أو توت شامي أو رمان"
+   },
+   "subtitle": {
+    "en": "Karkadeh: Passion Fruit, Shami Berry or Pomegranate",
+    "ar": "كركديه: باشن فروت أو توت شامي أو رمان"
+   },
+   "image": "karkadeh",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "strawberry-mojito",
+   "qlubId": "XP6Qe",
+   "category": "mojito",
+   "name": {
+    "en": "Strawberry Mojito",
+    "ar": "موهيتو فراولة"
+   },
+   "subtitle": {
+    "en": "Strawberry Mojito",
+    "ar": "موهيتو فراولة"
+   },
+   "image": "strawberry-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "peach-mojito",
+   "qlubId": "d2ndP",
+   "category": "mojito",
+   "name": {
+    "en": "Peach Mojito",
+    "ar": "موهيتو خوخ"
+   },
+   "subtitle": {
+    "en": "Peach Mojito",
+    "ar": "موهيتو خوخ"
+   },
+   "image": "peach-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "raspberry-mojito",
+   "qlubId": "wvVKL",
+   "category": "mojito",
+   "name": {
+    "en": "Raspberry Mojito",
+    "ar": "موهيتو توت"
+   },
+   "subtitle": {
+    "en": "Raspberry Mojito",
+    "ar": "موهيتو توت"
+   },
+   "calories": 160,
+   "image": "raspberry-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "pomegranate-mojito",
+   "qlubId": "yvGP5",
+   "category": "mojito",
+   "name": {
+    "en": "Pomegranate Mojito",
+    "ar": "موهيتو رمان"
+   },
+   "subtitle": {
+    "en": "Pomegranate Mojito",
+    "ar": "موهيتو رمان"
+   },
+   "image": "pomegranate-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "watermelon-mojito",
+   "qlubId": "oDP0P",
+   "category": "mojito",
+   "name": {
+    "en": "Watermelon Mojito",
+    "ar": "موهيتو بطيخ"
+   },
+   "subtitle": {
+    "en": "Watermelon Mojito",
+    "ar": "موهيتو بطيخ"
+   },
+   "image": "watermelon-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "passion-fruit-mojito",
+   "qlubId": "18DVM",
+   "category": "mojito",
+   "name": {
+    "en": "Passion Fruit Mojito",
+    "ar": "موهيتو باشن فروت"
+   },
+   "subtitle": {
+    "en": "Passion Fruit Mojito",
+    "ar": "موهيتو باشن فروت"
+   },
+   "calories": 149,
+   "image": "passion-fruit-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "blue-ocean-mojito",
+   "qlubId": "mkKA8",
+   "category": "mojito",
+   "name": {
+    "en": "Blue Ocean Mojito",
+    "ar": "موهيتو بلو أوشن"
+   },
+   "subtitle": {
+    "en": "Blue Ocean Mojito",
+    "ar": "موهيتو بلو أوشن"
+   },
+   "image": "blue-ocean-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "blackberry-mojito",
+   "qlubId": "lmbZ1",
+   "category": "mojito",
+   "name": {
+    "en": "Blackberry Mojito",
+    "ar": "موهيتو بلاك بيري"
+   },
+   "subtitle": {
+    "en": "Blackberry Mojito",
+    "ar": "موهيتو بلاك بيري"
+   },
+   "image": "blackberry-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shami-berry-mojito",
+   "qlubId": "nZ178",
+   "category": "mojito",
+   "name": {
+    "en": "Shami Berry Mojito",
+    "ar": "موهيتو توت شامي"
+   },
+   "subtitle": {
+    "en": "Shami Berry Mojito",
+    "ar": "موهيتو توت شامي"
+   },
+   "calories": 156,
+   "image": "shami-berry-mojito",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "fanta",
+   "qlubId": "3VwYn",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Fanta",
+    "ar": "فانتا"
+   },
+   "subtitle": {
+    "en": "Fanta",
+    "ar": "فانتا"
+   },
+   "image": "fanta",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "sprite",
+   "qlubId": "6Zb6X",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Sprite",
+    "ar": "سبرايت"
+   },
+   "subtitle": {
+    "en": "Sprite",
+    "ar": "سبرايت"
+   },
+   "image": "sprite",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "coca-cola",
+   "qlubId": "g6NKg",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Coca-Cola",
+    "ar": "كوكاكولا"
+   },
+   "subtitle": {
+    "en": "Coca-Cola",
+    "ar": "كوكاكولا"
+   },
+   "image": "coca-cola",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "coca-cola-diet",
+   "qlubId": "ejNXg",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Coca-Cola Diet",
+    "ar": "كوكاكولا دايت"
+   },
+   "subtitle": {
+    "en": "Coca-Cola Diet",
+    "ar": "كوكاكولا دايت"
+   },
+   "image": "coca-cola-diet",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "sparkling-water",
+   "qlubId": "vA4bA",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Sparkling Water, Small",
+    "ar": "مياه غازية صغيرة"
+   },
+   "subtitle": {
+    "en": "Sparkling Water, Small",
+    "ar": "مياه غازية صغيرة"
+   },
+   "image": "sparkling-water",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "still-water-small",
+   "qlubId": "qYzVZ",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Still Water, Small",
+    "ar": "مياه صغيرة"
+   },
+   "subtitle": {
+    "en": "Still Water, Small",
+    "ar": "مياه صغيرة"
+   },
+   "image": "still-water-small",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "still-water-large",
+   "qlubId": "LALyX",
+   "category": "soft-drinks",
+   "name": {
+    "en": "Still Water, Large",
+    "ar": "مياه كبيرة"
+   },
+   "subtitle": {
+    "en": "Still Water, Large",
+    "ar": "مياه كبيرة"
+   },
+   "image": "still-water-large",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "white-wine-na",
+   "qlubId": "3VwJL",
+   "category": "wine",
+   "name": {
+    "en": "White Wine, Non-Alcoholic",
+    "ar": "نبيذ أبيض بدون كحول"
+   },
+   "subtitle": {
+    "en": "White Wine, Non-Alcoholic",
+    "ar": "نبيذ أبيض بدون كحول"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "red-wine-na",
+   "qlubId": "LALJ1",
+   "category": "wine",
+   "name": {
+    "en": "Red Wine, Non-Alcoholic",
+    "ar": "نبيذ أحمر بدون كحول"
+   },
+   "subtitle": {
+    "en": "Red Wine, Non-Alcoholic",
+    "ar": "نبيذ أحمر بدون كحول"
+   },
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-blueberry",
+   "qlubId": "83QQm",
+   "category": "shisha",
+   "name": {
+    "en": "Blueberry",
+    "ar": "بلوبيري"
+   },
+   "subtitle": {
+    "en": "Blueberry",
+    "ar": "بلوبيري"
+   },
+   "image": "shisha-blueberry",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-candy",
+   "qlubId": "GJLL5",
+   "category": "shisha",
+   "name": {
+    "en": "Candy",
+    "ar": "كاندي"
+   },
+   "subtitle": {
+    "en": "Candy",
+    "ar": "كاندي"
+   },
+   "image": "shisha-candy",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-gum-cinnamon",
+   "qlubId": "QyLKX",
+   "category": "shisha",
+   "name": {
+    "en": "Bubble Gum & Cinnamon",
+    "ar": "علكة وقرفة"
+   },
+   "subtitle": {
+    "en": "Bubble Gum & Cinnamon",
+    "ar": "علكة وقرفة"
+   },
+   "image": "shisha-gum-cinnamon",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-gum-mastic",
+   "qlubId": "KyL54",
+   "category": "shisha",
+   "name": {
+    "en": "Bubble Gum & Mastic",
+    "ar": "علكة ومستكة"
+   },
+   "subtitle": {
+    "en": "Bubble Gum & Mastic",
+    "ar": "علكة ومستكة"
+   },
+   "image": "shisha-gum-mastic",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-gum-mint",
+   "qlubId": "bqlL0",
+   "category": "shisha",
+   "name": {
+    "en": "Bubble Gum & Mint",
+    "ar": "علكة ونعناع"
+   },
+   "subtitle": {
+    "en": "Bubble Gum & Mint",
+    "ar": "علكة ونعناع"
+   },
+   "image": "shisha-gum-mint",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-mix",
+   "qlubId": "03OOX",
+   "category": "shisha",
+   "name": {
+    "en": "Mix",
+    "ar": "مكس"
+   },
+   "subtitle": {
+    "en": "Mix",
+    "ar": "مكس"
+   },
+   "image": "shisha-mix",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-mint",
+   "qlubId": "71KKw",
+   "category": "shisha",
+   "name": {
+    "en": "Mint",
+    "ar": "نعناع"
+   },
+   "subtitle": {
+    "en": "Mint",
+    "ar": "نعناع"
+   },
+   "image": "shisha-mint",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-grape",
+   "qlubId": "ALVVL",
+   "category": "shisha",
+   "name": {
+    "en": "Grape",
+    "ar": "عنب"
+   },
+   "subtitle": {
+    "en": "Grape",
+    "ar": "عنب"
+   },
+   "image": "shisha-grape",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-cinnamon",
+   "qlubId": "XP67M",
+   "category": "shisha",
+   "name": {
+    "en": "Cinnamon",
+    "ar": "قرفة"
+   },
+   "subtitle": {
+    "en": "Cinnamon",
+    "ar": "قرفة"
+   },
+   "image": "shisha-cinnamon",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-peach",
+   "qlubId": "d2nLA",
+   "category": "shisha",
+   "name": {
+    "en": "Peach",
+    "ar": "خوخ"
+   },
+   "subtitle": {
+    "en": "Peach",
+    "ar": "خوخ"
+   },
+   "image": "shisha-peach",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-mastic",
+   "qlubId": "Zr33g",
+   "category": "shisha",
+   "name": {
+    "en": "Mastic",
+    "ar": "مستكة"
+   },
+   "subtitle": {
+    "en": "Mastic",
+    "ar": "مستكة"
+   },
+   "image": "shisha-mastic",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-watermelon",
+   "qlubId": "wvVJq",
+   "category": "shisha",
+   "name": {
+    "en": "Watermelon",
+    "ar": "بطيخ"
+   },
+   "subtitle": {
+    "en": "Watermelon",
+    "ar": "بطيخ"
+   },
+   "image": "shisha-watermelon",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-lemon-mint",
+   "qlubId": "zn88W",
+   "category": "shisha",
+   "name": {
+    "en": "Lemon & Mint",
+    "ar": "ليمون ونعناع"
+   },
+   "subtitle": {
+    "en": "Lemon & Mint",
+    "ar": "ليمون ونعناع"
+   },
+   "image": "shisha-lemon-mint",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-grape-berries",
+   "qlubId": "M81wL",
+   "category": "shisha",
+   "name": {
+    "en": "Grapes & Berries",
+    "ar": "عنب وتوت"
+   },
+   "subtitle": {
+    "en": "Grapes & Berries",
+    "ar": "عنب وتوت"
+   },
+   "image": "shisha-grape-berries",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-nakhla-apple",
+   "qlubId": "PoLb4",
+   "category": "shisha",
+   "name": {
+    "en": "Nakhla Apple",
+    "ar": "تفاح نخلة"
+   },
+   "subtitle": {
+    "en": "Nakhla Apple",
+    "ar": "تفاح نخلة"
+   },
+   "image": "shisha-nakhla-apple",
+   "background": "navy",
+   "available": true
+  },
+  {
+   "id": "shisha-fakher-apple",
+   "qlubId": "71Kov",
+   "category": "shisha",
+   "name": {
+    "en": "Fakher Apple",
+    "ar": "تفاح فاخر"
+   },
+   "subtitle": {
+    "en": "Fakher Apple",
+    "ar": "تفاح فاخر"
+   },
+   "image": "shisha-fakher-apple",
+   "background": "navy",
+   "available": true
+  }
+ ],
+ "drinks": []
+}

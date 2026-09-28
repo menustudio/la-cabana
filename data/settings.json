@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "currency": "SAR",
+  "defaultLang": "ar",
+  "orderLinks": {
+    "keeta": "REPLACE_ME",
+    "hungerstation": "REPLACE_ME",
+    "jahez": "REPLACE_ME"
+  }
+}

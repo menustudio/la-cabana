@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Node (only if you ever add local tooling)
+node_modules/
+
+# NOTE: dist/ IS committed on purpose — it is the deploy-ready artifact for
+# zero-build static hosting. Rebuild it with `python tools/build.py`.
+
+print/_qr.png
+
+_sources/
+tools/_qlub_cache/
+dist/

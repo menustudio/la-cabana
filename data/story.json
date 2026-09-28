@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "welcome": {
+    "kicker": { "ar": "أهلاً وسهلاً", "en": "Welcome" },
+    "title": { "ar": "أهلاً بكم في لا كابانا", "en": "Welcome to La Cabana" },
+    "paragraphs": [
+      {
+        "ar": "من فطور الصباح إلى مشاوي المساء، ومن فنجان الإسبريسو إلى الشيشة — كل ما تحبه في مكان واحد.",
+        "en": "From morning breakfast to evening grills, from a cup of espresso to shisha — everything you love, in one place."
+      },
+      {
+        "ar": "تصفّح الأقسام واختر على راحتك، وفريقنا جاهز لطلبك.",
+        "en": "Browse the sections at your own pace — our team is ready when you are."
+      }
+    ],
+    "texture": "LA CABANA",
+    "image": "welcome",
+    "mood": "navy"
+  },
+  "order": {
+    "kicker": { "ar": "اطلب", "en": "Order" },
+    "title": { "ar": "اطلب لا كابانا لبيتك", "en": "La Cabana, Delivered" },
+    "body": {
+      "ar": "اطلب في دقائق من تطبيقك المفضّل.",
+      "en": "Order in minutes on your favorite app."
+    }
+  },
+  "closing": {
+    "thanks": { "ar": "بالعافية", "en": "Enjoy Your Meal" },
+    "sub": {
+      "ar": "شكراً لزيارتكم. نراكم دائماً في لا كابانا.",
+      "en": "Thank you for being with us. See you again at La Cabana."
+    }
+  }
+}
