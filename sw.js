@@ -1,100 +1,15 @@
-/* ADIC2 La Cabana — sw.js
-   Minimal offline shell:
-   - precache the app shell on install
-   - network-first for data/*.json (menu & price edits propagate instantly)
-   - cache-first for assets/ (immutable image/font pipeline output)
-   - navigation fallback to the cached shell (the app IS the offline page) */
-
-const CACHE = "cabana-v1";
-
-const SHELL = [
-  "./",
-  "index.html",
-  "manifest.json",
-  "css/bundle.min.css",
-  "js/vendor/gsap-bundle.min.js",
-  "js/app.js",
-  "js/utils.js",
-  "js/menu.js",
-  "js/story.js",
-  "js/ingredients.js",
-  "js/swipe.js",
-  "js/animations.js",
-  "js/parallax.js",
-  "js/loader.js",
-  "data/brand.json",
-  "data/social.json",
-  "data/settings.json",
-  "data/categories.json",
-  "data/menu.json",
-  "data/prices.json",
-  "data/promo.json",
-  "data/story.json",
-  "data/i18n.json",
-  "assets/fonts/ReemKufi-var-arabic.woff2",
-  "assets/fonts/Tajawal-400-arabic.woff2",
-  "assets/fonts/Tajawal-700-arabic.woff2",
-  "assets/logo/favicon.png",
-  "assets/logo/logo-champagne.webp",
-];
-
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(CACHE)
-      // addAll rejects wholesale on one 404 — add files individually instead
-      .then((cache) => Promise.allSettled(SHELL.map((url) => cache.add(url))))
-      .then(() => self.skipWaiting())
-  );
-});
+/* ADIC2 La Cabana — retired service worker.
+   The first version of the menu installed an offline cache ("cabana-v1"). The current menu does not use
+   a service worker, so this file replaces the old one on returning phones: it clears every cache,
+   unregisters itself and reloads open tabs once so they show the current menu. */
+self.addEventListener("install", () => self.skipWaiting());
 
 self.addEventListener("activate", (e) => {
-  e.waitUntil(
-    caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim())
-  );
-});
-
-self.addEventListener("fetch", (e) => {
-  const req = e.request;
-  if (req.method !== "GET" || !req.url.startsWith(self.location.origin)) return;
-  const url = new URL(req.url);
-
-  // navigations: network, falling back to the cached shell
-  if (req.mode === "navigate") {
-    e.respondWith(fetch(req).catch(() => caches.match("index.html")));
-    return;
-  }
-
-  // data AND app code: network-first + revalidate.
-  // The shell used to be cache-first, which let a phone keep running an old
-  // build for days — a menu that gains dishes and sections every week cannot
-  // ship that way. Assets below stay cache-first: they are content-named.
-  const isShell = /\.(?:css|js|html)$/.test(url.pathname);
-  if (url.pathname.includes("/data/") || isShell) {
-    e.respondWith(
-      fetch(req.url, { cache: "no-cache" })
-        .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((cache) => cache.put(req, copy));
-          return res;
-        })
-        .catch(() => caches.match(req))
-    );
-    return;
-  }
-
-  // everything else (images, fonts): cache-first
-  e.respondWith(
-    caches.match(req).then((hit) => {
-      if (hit) return hit;
-      return fetch(req).then((res) => {
-        if (res.ok) {
-          const copy = res.clone();
-          caches.open(CACHE).then((cache) => cache.put(req, copy));
-        }
-        return res;
-      });
-    })
-  );
+  e.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.map((k) => caches.delete(k)));
+    await self.registration.unregister();
+    const tabs = await self.clients.matchAll({ type: "window" });
+    tabs.forEach((tab) => tab.navigate(tab.url));
+  })());
 });

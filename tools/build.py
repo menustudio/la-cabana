@@ -1,263 +1,87 @@
 # -*- coding: utf-8 -*-
+"""Build data + dish images for the menu.
+
+Reads data/*.json (prices synced from qlub by tools/qlub-sync.py), finds each dish's background-free
+cutout in the project's "صور المنيو - بدون خلفية" folder (local only, not in git), trims it to the
+subject, and writes WebP (full 760px + card 380px) to assets/dishes/. Emits data/menu.js (window.MENU).
+Both outputs are committed; the Pages workflow only copies files, it does not run this.
+
+Run:  python tools/build.py
 """
-ADIC2 La Cabana — production build.
+import os, re, sys, json, hashlib
+from PIL import Image
 
-Generates a clean, minified, deploy-ready `dist/` folder that serves as a
-pure static site on GitHub Pages / Vercel / Netlify / Cloudflare Pages with
-no per-platform build step. Source stays readable; dist is the artifact.
+sys.stdout.reconfigure(encoding='utf-8')
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OLD = ROOT   # data/ and tools/sources.json live in this repo
+CUT = r'C:\Users\Owner\Desktop\شغل كلود\المطاعم - التسويق\لا كابانا\صور المنيو - بدون خلفية'
+OUT_IMG = os.path.join(ROOT, 'assets', 'dishes')
+os.makedirs(OUT_IMG, exist_ok=True)
 
-Run:
-    python tools/build.py                    # default GitHub Pages base URL
-    python tools/build.py --base-url https://yourdomain.com
+load = lambda p: json.load(open(p, encoding='utf-8'))
+menu = load(os.path.join(OLD, 'data', 'menu.json'))['dishes']
+cats = sorted(load(os.path.join(OLD, 'data', 'categories.json')), key=lambda c: c['order'])
+src = load(os.path.join(OLD, 'tools', 'sources.json'))
+prices = load(os.path.join(OLD, 'data', 'prices.json'))
+brand = load(os.path.join(OLD, 'data', 'brand.json'))
+clean = lambda s: re.sub(r'\s+', ' ', re.sub(r'[\\/:*?"<>|]', ' - ', s)).strip(' .-')
 
-What it does:
-  - CSS : concatenate css/*.css (fixed order) -> rcssmin -> dist/css/bundle.min.css
-  - JS  : rjsmin each js/*.js -> dist/js/*.js  (module graph + modulepreloads kept)
-  - HTML: conservative minify (protect script/style/template), absolute og:image
-  - copy: assets/ (minus logo-source.png), data/ (verbatim, editable), gsap, manifest
-  - sw.js: same shell, CACHE bumped to a content hash (invalidates old caches)
-  - generate: 404.html, .nojekyll, _headers, stamped robots.txt + sitemap.xml
-"""
-import argparse
-import hashlib
-import pathlib
-import re
-import shutil
-import sys
+DRINKS = {'hot-drinks', 'cold-drinks', 'juices', 'mojito', 'soft-drinks', 'wine', 'shisha'}
+LISTS = {'shisha', 'wine'}            # compact rows, no photos
+SIZES = (('', 760), ('-sm', 380))
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-DIST = ROOT / "dist"
-VENDOR = ROOT / "tools" / "vendor"
+def export(cut_path, key):
+    """Trim the transparent cutout to its subject and write full + small WebP. Returns aspect ratio (w/h)."""
+    im = Image.open(cut_path).convert('RGBA')
+    bb = im.split()[3].point(lambda a: 255 if a > 10 else 0).getbbox()
+    if bb:
+        pad = int(max(bb[2] - bb[0], bb[3] - bb[1]) * 0.03)
+        im = im.crop((max(0, bb[0] - pad), max(0, bb[1] - pad), min(im.width, bb[2] + pad), min(im.height, bb[3] + pad)))
+    for suf, size in SIZES:
+        dst = os.path.join(OUT_IMG, f'{key}{suf}.webp')
+        t = im.copy(); t.thumbnail((size, size), Image.LANCZOS)
+        t.save(dst, 'WEBP', quality=82, method=6, alpha_quality=90)
+    return round(im.width / im.height, 3)
 
-# prefer the vendored copies so a local rebuild needs no `pip install`; fall
-# back to a pip-installed copy (e.g. in CI) if the vendored import fails.
-try:
-    sys.path.insert(0, str(VENDOR))
-    import rcssmin  # noqa: E402
-    import rjsmin  # noqa: E402
-except Exception:
-    if str(VENDOR) in sys.path:
-        sys.path.remove(str(VENDOR))
-    import rcssmin  # noqa: E402  (pip install rcssmin rjsmin)
-    import rjsmin  # noqa: E402
+out_cats, n_img, seen = [], 0, {}
+ci = 0
+for c in cats:
+    items = [d for d in menu if d['category'] == c['id'] and d.get('available', True)]
+    if not items: continue
+    has_img = any(src.get(d.get('image', d['id'])) for d in items)
+    if has_img: ci += 1
+    folder = f"{ci:02d} {clean(c['label']['ar'])}"
+    dishes, n = [], 0
+    for d in [x for x in menu if x['category'] == c['id']]:
+        p = src.get(d.get('image', d['id']))
+        cut = None
+        if p and os.path.exists(p):
+            n += 1
+            cut = os.path.join(CUT, folder, f"{n:02d} {clean(d['name']['ar'])}.png")
+        if not d.get('available', True): continue
+        img = ratio = None
+        if cut and os.path.exists(cut) and c['id'] not in LISTS:
+            h = hashlib.md5(open(cut, 'rb').read()).hexdigest()[:10]
+            if h not in seen: seen[h] = (d['id'], export(cut, d['id'])); n_img += 1
+            img, ratio = seen[h]
+        desc = d.get('description') or {}
+        dishes.append({k: v for k, v in {
+            'id': d['id'], 'ar': d['name']['ar'], 'en': d['name']['en'],
+            'dar': desc.get('ar', ''), 'den': desc.get('en', ''),
+            'price': prices.get(d['id']), 'img': img, 'ratio': ratio,
+            'veg': bool(d.get('vegetarian')), 'spicy': bool(d.get('spicy')), 'sig': bool(d.get('signature')),
+            'cal': d.get('calories') or None}.items() if v not in (None, False, '')})
+    out_cats.append({'id': c['id'], 'ar': c['label']['ar'], 'en': c['label']['en'],
+                     'sar': c.get('intro', {}).get('subtitle', {}).get('ar', ''),
+                     'sen': c.get('intro', {}).get('subtitle', {}).get('en', ''),
+                     'kind': 'list' if c['id'] in LISTS else 'drink' if c['id'] in DRINKS else 'food', 'items': dishes})
 
-CSS_ORDER = ["fonts.css", "style.css", "animations.css", "sections.css", "responsive.css"]
-JS_FILES = ["utils", "menu", "story", "ingredients", "swipe", "animations", "parallax", "loader", "app"]
-DEFAULT_BASE_URL = "https://USERNAME.github.io/la-cabana-menu"
-
-
-def clean_dist():
-    if DIST.exists():
-        shutil.rmtree(DIST)
-    DIST.mkdir(parents=True)
-
-
-def build_css() -> int:
-    parts = []
-    for name in CSS_ORDER:
-        css = (ROOT / "css" / name).read_text(encoding="utf-8")
-        parts.append(css)
-    minified = rcssmin.cssmin("\n".join(parts))
-    out = DIST / "css" / "bundle.min.css"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(minified, encoding="utf-8")
-    return len(minified.encode("utf-8"))
-
-
-def build_js() -> int:
-    out_dir = DIST / "js"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    total = 0
-    for name in JS_FILES:
-        src = (ROOT / "js" / f"{name}.js").read_text(encoding="utf-8")
-        mini = rjsmin.jsmin(src)
-        (out_dir / f"{name}.js").write_text(mini, encoding="utf-8")
-        total += len(mini.encode("utf-8"))
-    # GSAP bundle is already minified — copy verbatim
-    vendor_out = out_dir / "vendor"
-    vendor_out.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(ROOT / "js" / "vendor" / "gsap-bundle.min.js", vendor_out / "gsap-bundle.min.js")
-    return total
-
-
-# regions whose inner content must survive minification untouched
-_PROTECT = re.compile(
-    r"(<script\b[^>]*>.*?</script>|<style\b[^>]*>.*?</style>|<template\b[^>]*>.*?</template>|<pre\b[^>]*>.*?</pre>|<textarea\b[^>]*>.*?</textarea>)",
-    re.S | re.I,
-)
-
-
-def minify_html(html: str) -> str:
-    stash = []
-
-    def hold(m):
-        stash.append(m.group(1))
-        return f"\x00{len(stash) - 1}\x00"
-
-    html = _PROTECT.sub(hold, html)
-    html = re.sub(r"<!--(?!\[if).*?-->", "", html, flags=re.S)  # strip comments (keep IE conditionals)
-    html = re.sub(r">\s+<", "><", html)                          # inter-tag whitespace
-    html = re.sub(r"\n\s*", "", html)                            # line indentation
-    html = re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], html)
-    return html.strip()
-
-
-def version_assets(html: str, stamp: str) -> str:
-    """Stamp the CSS + module URLs with the build hash.
-
-    Phones hold on to a cached bundle for days otherwise, so a guest can be
-    reading last week's menu on a site that shipped hours ago. A changing
-    query string makes every deploy a fresh URL.
-    """
-    html = html.replace('href="css/bundle.min.css"', f'href="css/bundle.min.css?v={stamp}"')
-    for name in JS_FILES:
-        html = html.replace(f'"js/{name}.js"', f'"js/{name}.js?v={stamp}"')
-    return html.replace('"js/vendor/gsap-bundle.min.js"', f'"js/vendor/gsap-bundle.min.js?v={stamp}"')
-
-
-def build_html(base_url: str) -> int:
-    html = (ROOT / "index.html").read_text(encoding="utf-8")
-    # absolute canonical (search engines want the deployed URL, not "./")
-    html = html.replace('<link rel="canonical" href="./">',
-                        f'<link rel="canonical" href="{base_url}/">')
-    # absolute social-card image (crawlers need an absolute URL)
-    html = html.replace(
-        'content="assets/logo/og-image.jpg"',
-        f'content="{base_url}/assets/logo/og-image.jpg"',
-    )
-    # add og:url right after the (now absolute) og:image meta
-    html = html.replace(
-        f'<meta property="og:image" content="{base_url}/assets/logo/og-image.jpg">',
-        f'<meta property="og:image" content="{base_url}/assets/logo/og-image.jpg">\n'
-        f'  <meta property="og:url" content="{base_url}/">',
-    )
-    stamp = hashlib.sha1(
-        (ROOT / "css" / "bundle.min.css").read_bytes()
-        + b"".join((ROOT / "js" / f"{n}.js").read_bytes() for n in JS_FILES)
-    ).hexdigest()[:8]
-    html = version_assets(html, stamp)
-    mini = minify_html(html)
-    (DIST / "index.html").write_text(mini, encoding="utf-8")
-    return len(mini.encode("utf-8"))
-
-
-def copy_static():
-    # assets minus the 1.6 MB icon master
-    shutil.copytree(
-        ROOT / "assets", DIST / "assets",
-        ignore=shutil.ignore_patterns("logo-source.png"),
-    )
-    # data verbatim — stays human-editable in the deployed output
-    shutil.copytree(ROOT / "data", DIST / "data")
-    shutil.copy2(ROOT / "manifest.json", DIST / "manifest.json")
-
-
-def build_sw(cache_hash: str):
-    sw = (ROOT / "sw.js").read_text(encoding="utf-8")
-    sw = re.sub(r'const CACHE = "[^"]*";', f'const CACHE = "cabana-{cache_hash}";', sw)
-    (DIST / "sw.js").write_text(sw, encoding="utf-8")
-
-
-def stamp_seo(base_url: str):
-    (DIST / "robots.txt").write_text(
-        "User-agent: *\nAllow: /\n\n"
-        f"Sitemap: {base_url}/sitemap.xml\n",
-        encoding="utf-8",
-    )
-    (DIST / "sitemap.xml").write_text(
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"  <url>\n    <loc>{base_url}/</loc>\n"
-        "    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n"
-        "</urlset>\n",
-        encoding="utf-8",
-    )
-
-
-NOTFOUND_HTML = """<!DOCTYPE html>
-<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>أديكتو لا كابانا — الصفحة غير موجودة</title>
-<link rel="icon" href="assets/logo/favicon.png" type="image/png">
-<style>
-:root{color-scheme:light}
-body{margin:0;min-height:100vh;display:grid;place-items:center;text-align:center;
-font-family:"Tajawal","Segoe UI",sans-serif;background:#F6F1EA;color:#1A1612;padding:2rem}
-.box{max-width:26rem}
-h1{font-size:clamp(2rem,9vw,3rem);margin:.2em 0;color:#8A5A33}
-p{color:#5B4636;line-height:1.8;margin:.6em 0 1.4em}
-a{display:inline-block;min-height:48px;line-height:48px;padding:0 2rem;border-radius:999px;
-background:#94602F;color:#FFF8F0;font-weight:700;text-decoration:none}
-</style></head>
-<body><div class="box">
-<h1>لا كابانا</h1>
-<p>الصفحة اللي تدوّر عليها مش موجودة.<br>ارجع للمنيو وكمّل.</p>
-<a href="./">المنيو الرئيسي</a>
-</div></body></html>
-"""
-
-HEADERS = """# Long-cache the immutable assets (fonts + vendored GSAP never change by name)
-/assets/fonts/*
-  Cache-Control: public, max-age=31536000, immutable
-/js/vendor/*
-  Cache-Control: public, max-age=31536000, immutable
-
-# Revalidate app shell + data every load (SW owns the real caching)
-/sw.js
-  Cache-Control: public, max-age=0, must-revalidate
-/data/*
-  Cache-Control: public, max-age=0, must-revalidate
-/*
-  Cache-Control: public, max-age=0, must-revalidate
-"""
-
-
-def generate_extras():
-    (DIST / "404.html").write_text(NOTFOUND_HTML, encoding="utf-8")
-    (DIST / ".nojekyll").write_text("", encoding="utf-8")
-    (DIST / "_headers").write_text(HEADERS, encoding="utf-8")
-
-
-def content_hash() -> str:
-    h = hashlib.sha1()
-    for f in ["css/bundle.min.css", "index.html", "js/app.js", "js/menu.js"]:
-        h.update((DIST / f).read_bytes())
-    return h.hexdigest()[:10]
-
-
-def kb(n):
-    return f"{n / 1024:.1f} KB"
-
-
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--base-url", default=DEFAULT_BASE_URL,
-                    help="production origin for sitemap/robots/og (no trailing slash)")
-    args = ap.parse_args()
-    base = args.base_url.rstrip("/")
-
-    print(f"→ base URL: {base}")
-    clean_dist()
-    css_bytes = build_css()
-    js_bytes = build_js()
-    html_bytes = build_html(base)
-    copy_static()
-    stamp_seo(base)
-    generate_extras()
-    build_sw(content_hash())
-
-    # report
-    src_css = (ROOT / "css" / "bundle.min.css").stat().st_size if (ROOT / "css" / "bundle.min.css").exists() else 0
-    src_js = sum((ROOT / "js" / f"{n}.js").stat().st_size for n in JS_FILES)
-    src_html = (ROOT / "index.html").stat().st_size
-    print("\n  asset        source →  dist")
-    print(f"  CSS      {kb(src_css):>10} → {kb(css_bytes)}")
-    print(f"  JS (×9)  {kb(src_js):>10} → {kb(js_bytes)}")
-    print(f"  HTML     {kb(src_html):>10} → {kb(html_bytes)}")
-    total = sum(f.stat().st_size for f in DIST.rglob("*") if f.is_file())
-    print(f"\n  dist total: {kb(total)}  →  {DIST}")
-    print("  build OK")
-
-
-if __name__ == "__main__":
-    main()
+data = {'brand': {'ar': brand['name']['ar'], 'en': brand['name']['en'], 'tagAr': brand['tagline']['ar'],
+                  'tagEn': brand['tagline']['en'], 'cityAr': brand['location']['ar'], 'cityEn': brand['location']['en']},
+        'categories': out_cats}
+with open(os.path.join(ROOT, 'data', 'menu.js'), 'w', encoding='utf-8') as f:
+    f.write('/* generated by tools/build.py — do not edit by hand */\nwindow.MENU = ')
+    json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+    f.write(';\n')
+tot = sum(len(c['items']) for c in out_cats)
+print(f'{len(out_cats)} sections, {tot} items, {n_img} images')

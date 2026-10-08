@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://REPLACE_ME.example/sitemap.xml
+Sitemap: https://menustudio.github.io/la-cabana/sitemap.xml

@@ -1,59 +1,34 @@
-# كريستو — منيو رقمي فاخر
+# أديكتو لا كابانا — المنيو الرقمي
 
-موقع منيو تفاعلي لمطعم **كريستو** (مأكولات لبنانية — المصيف، الرياض).
-تجربة QR سينمائية: افتتاحية على خلفية التركواز، هيرو "اللوجو جه للحياة"، مقدمة لكل قسم، وكل صنف شاشة تحريرية كاملة. عربي/إنجليزي RTL، بدون أي framework — HTML/CSS/JS خام + GSAP محلي.
+منيو QR لمطعم ومقهى **ADIC2 La Cabana** في الرياض.
 
-**الرابط المباشر (للعميل وللـ QR):** https://menustudio.github.io/kristo/?lang=ar
+صور الأطباق مقصوصة من غير خلفية وواقفة على «أطباق» كحلي. الألوان خمس درجات كحلي (`#03031B` `#080B36` `#0E1946` `#152B5D` `#1D3C6A`) وأكسنت شامبين بلون اللوجو (`#E2C49E`). الموقع عربي وإنجليزي، ومكتوب HTML/CSS/JS خام من غير أي framework.
 
-## التشغيل
+**الرابط المباشر (للعميل وللـ QR):** https://menustudio.github.io/la-cabana/?lang=ar
 
-الموقع يحتاج سيرفر محلي (ES Modules + fetch لا يعملان من `file://`):
+## التشغيل المحلي
 
-- **الأسهل:** دبل كليك على `start.bat` → يفتح المتصفح على `http://localhost:4177`
-- أو: `python -m http.server 4177` داخل مجلد المشروع
+دبل كليك على `start.bat`، أو شغّل `python -m http.server 4180` داخل المجلد.
 
-## تعديل المحتوى — كل شيء من `data/` بدون لمس الكود
+## الملفات
 
-| الملف | ماذا يعدّل |
+| الملف | الوظيفة |
 |---|---|
-| `data/prices.json` | **الأسعار** — ضع الرقم مكان `null` وسيظهر السعر تلقائياً. `null` = السعر مخفي |
-| `data/menu.json` | الأصناف والمشروبات: الأسماء، الوصف، المكونات، الصورة، الجو اللوني (`background`)، البادجات |
-| `data/categories.json` | الأقسام، ترتيبها، مقدماتها (العنوان والسطر الإنجليزي)، لون كل قسم |
-| `data/settings.json` | روابط الطلب (كيتا / هنقرستيشن / نينجا / ذا شيفز) — الرابط الفارغ أو `REPLACE_ME` يُخفي الزر |
-| `data/social.json` | واتساب / إنستجرام / تيك توك / سناب — الفارغ يُخفى |
-| `data/brand.json` | الاسم، التاج لاين، الموقع، رابط الخرائط، ساعات العمل |
-| `data/i18n.json` | نصوص الواجهة بالعربي والإنجليزي |
-| `data/story.json` | نصوص شاشات الترحيب والطلب والختام |
+| `index.html` · `css/style.css` · `js/app.js` | الواجهة: الهيرو، أطباق أديكتو، الأقسام، البحث، شيت تفاصيل الطبق، عربي/إنجليزي |
+| `data/menu.js` | **مولَّد**: كل الأقسام والأصناف والأسعار اللي الواجهة بتقرأها |
+| `data/menu.json` · `categories.json` · `prices.json` · `brand.json` | المصدر اللي `data/menu.js` بيتبني منه |
+| `assets/dishes/*.webp` | **مولَّد**: صورة كل صنف من غير خلفية بمقاسين (760 و380) |
+| `tools/qlub-sync.py` | بيسحب الأسعار والأصناف من qlub |
+| `tools/build.py` | بيبني `data/menu.js` وصور `assets/dishes/` |
+| `sw.js` | service worker بيمسح الكاش القديم من موبايلات اللي زاروا النسخة الأولى |
 
-### مثال: إضافة سعر
-في `data/prices.json` غيّر:
-```json
-"manakish-zaatar": null   →   "manakish-zaatar": 12
-```
-
-## الصور
-
-المصادر عالية الدقة (60MP) في `D:\chris\kristo menu\_extracted\`، والخريطة صنف→صورة في `tools/sources.json`.
+## تحديث الأسعار أو الأصناف
 
 ```
-python tools/optimize-images.py     # يولّد avif/webp/jpg بمقاسين لكل صنف
-python tools/make-icons.py          # أيقونات PWA + og-image من assets/logo/logo-source.png
+python tools/qlub-sync.py     # يسحب الأسعار والأصناف من qlub
+python tools/build.py         # يبني data/menu.js وصور الأطباق
 ```
 
-**اللوجو:** ضع الملف النظيف في `assets/logo/logo-source.png` ثم أعد تشغيل `make-icons.py` (بدونه يُستخدم mark مبسّط مؤقت).
+بعدها زوّد رقم `?v=` في `index.html` واعمل push على `main`. الـ workflow في `.github/workflows/deploy.yml` بينسخ الملفات وينشرها على GitHub Pages.
 
-## بعد أي تعديل CSS
-
-```
-python tools/build-css.py
-```
-
-الموقع يقرأ `css/bundle.min.css` فقط.
-
-## نشر إنتاجي
-
-```
-python tools/build.py --base-url https://YOUR-DOMAIN
-```
-
-يبني `dist/` جاهز للرفع على GitHub Pages / Netlify / Vercel (والـ workflow في `.github/` ينشر تلقائياً على Pages).
+الصور المقصوصة الأصلية موجودة في `Desktop\شغل كلود\المطاعم - التسويق\لا كابانا\صور المنيو - بدون خلفية\`. علشان كده `build.py` بيشتغل على الجهاز بس، مش جوه الـ workflow.
